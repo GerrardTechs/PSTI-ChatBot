@@ -286,36 +286,15 @@ console.log('ys shape:', ys.shape); // [samples, numClasses]
       fs.mkdirSync(modelPath, { recursive: true });
     }
   
-    const artifacts = await this.model.save(
-      tf.io.withSaveHandler(async (artifacts) => artifacts)
-    );
+    console.log('\n💾 Saving model (tfjs web format)...');
+  
+    await this.model.save(`file://${modelPath}`);
   
     fs.writeFileSync(
-      `${modelPath}/model.json`,
-      JSON.stringify({
-        modelTopology: artifacts.modelTopology,
-        format: artifacts.format,
-        generatedBy: artifacts.generatedBy,
-        convertedBy: artifacts.convertedBy,
-        weightsManifest: [{
-          paths: ['weights.bin'],
-          weights: artifacts.weightSpecs
-        }]
-      }, null, 2)
+      tokenizerPath,
+      JSON.stringify(this.tokenizer, null, 2)
     );
   
-    fs.writeFileSync(
-      `${modelPath}/weights.bin`,
-      Buffer.from(artifacts.weightData)
-    );
-  
-    console.log(`\n💾 Model saved to ${modelPath}`);
-  
-    // Tokenizer
-    fs.writeFileSync(tokenizerPath, JSON.stringify(this.tokenizer, null, 2));
-    console.log(`💾 Tokenizer saved to ${tokenizerPath}`);
-  
-    // Metadata
     fs.writeFileSync(
       `${modelPath}/metadata.json`,
       JSON.stringify({
@@ -326,10 +305,8 @@ console.log('ys shape:', ys.shape); // [samples, numClasses]
       }, null, 2)
     );
   
-    console.log(`💾 Metadata saved`);
-  }
-  
-  
+    console.log('✅ Model, tokenizer, metadata saved');
+  }  
 }
 
 async function main() {
