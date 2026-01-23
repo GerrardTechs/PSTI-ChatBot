@@ -1,0 +1,319 @@
+{
+    "vocabulary": [
+      "2024",
+      "2024?",
+      "2025",
+      "2025?",
+      "24?",
+      "25?",
+      "ada",
+      "admin",
+      "aja",
+      "aja?",
+      "akses",
+      "aku",
+      "alumni",
+      "anak",
+      "anak-anak",
+      "angkatan",
+      "apa",
+      "apa?",
+      "apa?psti",
+      "apaan",
+      "arah",
+      "asah",
+      "assalamualaikum",
+      "aturan",
+      "banyak",
+      "banyak!!",
+      "bawa",
+      "beasiswa",
+      "bebas",
+      "belajar",
+      "berapa",
+      "berapa?",
+      "bergabung",
+      "bisa",
+      "boleh",
+      "buat",
+      "buka",
+      "bye",
+      "caranya",
+      "chat",
+      "chat!",
+      "chatbot",
+      "chattt!!",
+      "contact",
+      "dadah",
+      "dalam",
+      "dapet",
+      "dapetin",
+      "dapetinnya?",
+      "dengan",
+      "di",
+      "dibuat",
+      "dibuat?",
+      "didapet",
+      "dimana?",
+      "dm",
+      "dong",
+      "dong!",
+      "email",
+      "fasilitas",
+      "fungsi",
+      "ga",
+      "ga?",
+      "gedung",
+      "gimana",
+      "gimana?",
+      "goodbye",
+      "hai",
+      "halo",
+      "hari",
+      "harus",
+      "hello",
+      "hi",
+      "hubungannya",
+      "hubungi",
+      "info",
+      "ini",
+      "inovasi",
+      "inovasi!",
+      "inovasi?",
+      "instagram",
+      "isi",
+      "isinya",
+      "itu",
+      "izin",
+      "jadi",
+      "jadwal",
+      "jam",
+      "jelasin",
+      "jumpa",
+      "kalo",
+      "kampus",
+      "kamsia",
+      "kasih",
+      "ke",
+      "kenalin",
+      "kenapa",
+      "kepanjangan",
+      "kerja",
+      "kerjain?",
+      "kira-kira",
+      "kontak",
+      "lab",
+      "lab?",
+      "lantai",
+      "letaknya",
+      "lokasi",
+      "luar",
+      "mahasiswa",
+      "makasih",
+      "malam",
+      "mana?",
+      "masuk",
+      "masuk?",
+      "mau",
+      "menjadi",
+      "minggu",
+      "nanya",
+      "ngapain?",
+      "ngerjain",
+      "nomor",
+      "nya",
+      "ok",
+      "okay",
+      "oke",
+      "operasional",
+      "pagi",
+      "pengen",
+      "perlu",
+      "permisi",
+      "pernah",
+      "person",
+      "projek",
+      "psti",
+      "psti?",
+      "reka",
+      "reka?",
+      "sabtu",
+      "sampai",
+      "sekarang?",
+      "selamat",
+      "semua?",
+      "siang",
+      "siapa",
+      "siapa?",
+      "sih",
+      "sih?",
+      "singkat",
+      "skill",
+      "soal",
+      "sosmed",
+      "suka",
+      "surat",
+      "syarat",
+      "tahun",
+      "tanya",
+      "tau",
+      "telegram",
+      "tempat",
+      "tengkyu",
+      "tentang",
+      "terbuka",
+      "terima",
+      "thankyou",
+      "thankyouu",
+      "tiap",
+      "tuh",
+      "tutup",
+      "ubl",
+      "ubl?",
+      "udah",
+      "umum",
+      "wa",
+      "weekend",
+      "ya",
+      "ya?",
+      "yaa",
+      "yah",
+      "yang"
+    ],
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "halo,hai,selamat pagi,selamat siang,selamat malam,permisi,assalamualaikum,hi,hello"
+        ],
+        "responses": [
+          "Halo! Selamat datang di Chatbot Beasiswa Reka Inovasi PSTI UBL|Hai, ada yang bisa dibantu tentang beasiswa PSTI?|Selamat datang! Mau tanya apa tentang Reka Inovasi?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "dadah,dadah chat,goodbye chat,bye chat!,bye,sampai jumpa,sampai jumpa chat!,dadah chatbot"
+        ],
+        "responses": [
+          "Sampai jumpa! Semoga sukses dapat Beasiswa Reka Inovasi!|Terima kasih, silakan daftar ya!|Semangat project inovatifnya! Sukses selalu!"
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "makasih,thankyouu,thankyou yaa,makasih banyak,terima kasih,tengkyu,kamsia,kamsia ya,tengkyu ya,terima kasih banyak chattt!!,terima kasih banyak!!,oke makasih,ok makasih,okay makasih,makasih yah"
+        ],
+        "responses": [
+          "Sama-sama! Saya senang jika anda puas dengan informasi yang saya berikan, apakah ada pertanyaan lagi seputar PSTI? 😊|Sama-sama! Saya puas jika anda juga puas dengan informasi yang saya berikan! Silahkan ada pertanyaan lagi? 😊|Iyaa sama-sama! Apakah ada yang ingin kamu tanyakan lagi seputar PSTI? 😀|Terima kasih kembali! Tanyakan saja apa yang jadi kebingungan mu yaa! 😁|Sama-samaaa, jangan sungkan untuk bertanya lagi jika masih bingung seputar PSTI yaa 😎"
+        ]
+      },
+      {
+        "tag": "about_psti",
+        "patterns": [
+          "apa itu lab PSTI?,Lab PSTI itu apa?,apaan itu lab PSTI?,PSTI tuh apa?,PSTI itu apa ya?,PSTI?,PSTI kepanjangan nya apa?,Kepanjangan PSTI?,apa itu psti?,psti itu apa sih?,lab psti tuh apa?,tentang lab psti dong,psti kepanjangan apa ya?,fungsi lab psti,psti buat ngapain?,lab psti ubl?,info singkat psti,lab psti itu lab apa,psti tempat apa?psti di ubl itu apa?,pengen tau soal psti,jelasin psti dong,psti buat mahasiswa apa?"
+        ],
+        "responses": [
+          "Lab PSTI (atau lengkapnya Pusat Studi Teknologii Informasi) adalah lab dimana mahasiswa dengan beasiswa reka inovasi dapat belajar dan mengembangkan skill mereka seputar teknologi informasi! Bersama dengan 3 Kakak-kakak keren \"Ari Mardiansyah\", \"Syarif Hidayatulloh\", dan \"Aldi Prasetyo\", kakak-kakak ini bertanggung jawab atas segala kegiatan yang berlangsung di dalam Lab! Adakah yang ingin kamu tanyakan lebih lanjut? 😊 Misalnya \"Kenapa Anak Reka Inovasi bergabung di Lab PSTI?\" atau \"Gimana caranya bisa dapet beasiswa Reka Inovasi?\"|Lab PSTI adalah laboratorium pusat riset dan praktikum IT di UBL, mulai dari programming sampai IoT dan AI. Bersama dengan 3 Kakak-kakak keren \"Ari Mardiansyah\", \"Syarif Hidayatulloh\", dan \"Aldi Prasetyo\", kakak-kakak ini bertanggung jawab atas segala kegiatan yang berlangsung di dalam Lab! Adakah yang ingin kamu tanyakan lebih lanjut? 😊 Misalnya \"Kenapa Anak Reka Inovasi bergabung di Lab PSTI?\" atau \"Gimana caranya bisa dapet beasiswa Reka Inovasi?\""
+        ]
+      },
+      {
+        "tag": "about_Reka&PSTI",
+        "patterns": [
+          "Apa hubungannya PSTI dengan mahasiswa reka inovasi?,Apa hubungannya anak reka inovasi dengan PSTI?,kenapa anak reka inovasi bergabung di PSTI?,kenapa di PSTI isi nya anak reka inovasi semua?"
+        ],
+        "responses": [
+          "Mahasiswa & Mahasiswi yang mengambil beasiwa reka inovasi di Universitas Bandar Lampung diharuskan untuk bergabung dengan salah satu pusat studi yang ada di Universitas Bandar Lampung yang dalam hal ini mereka yang tergabung di reka inovasi bisa memilih Pusat Studi Teknologi Informasi sebagai wadah mereka untuk meningkatkan kompetensi dan ilmu pengetahuan seputar teknologi seperti Smart system, digital twin, big data, Artificial Intelligence, Software Development, dan masih banyak lagi.|Mahasiswa Beasiswa Reka Inovasi UBL wajib tergabung dalam pusat studi sebagai syarat pengembangan kompetensi. Pusat Studi Teknologi Informasi tersedia sebagai wadah bagi kamu yang ingin mendalami Smart System, Digital Twin, Big Data, AI, hingga Software Development. Pastikan kamu memilih pusat studi yang sesuai dengan minat pengembangan ilmumu ya!"
+        ]
+      },
+      {
+        "tag": "about_Skill",
+        "patterns": [
+          "Skill apa aja yang bisa didapet di PSTI?,Belajar apa aja sih kalo di PSTI?,skill apa aja yang di asah di Lab PSTI?,Di lab PSTI bisa belajar apa aja?"
+        ],
+        "responses": []
+      },
+      {
+        "tag": "about_mhsreka24",
+        "patterns": [
+          "Siapa aja yang menjadi mahasiswa beasiswa Reka Inovasi?,Siapa aja yang jadi anak Beasiswa Reka Inovasi?,Siapa aja yang masuk reka?,Siapa aja yang dapet beasiswa reka?,Siapa aja mahasiswa tahun 2024 yang dapet beasiswa reka?,Siapa aja yang dapet beasiswa reka inovasi angkatan 24?,siapa aja anak beasiswa reka tahun 2024?,siapa aja yang masuk reka inovasi angkatan 24?,siapa aja mahasiswa tahun 2024 yang beasiswa reka inovasi?,kenalin anak-anak reka inovasi 2024 dong!"
+        ],
+        "responses": [
+          "Kenalin nih!!  👋  Ini adalah anak-anak mahasiswa yang mendapat Beasiswa Reka Inovasi dan menjadi bagian dari Lab PSTI pada tahun angkatan 2024! Yang pertama ada Muhammad Ilham Alparsy (28--), seorang mahasiswa yang bersemangat menjelajah serta mendalami teknologi dengan riset nya yang cekatan beserta segudang pengalaman! Peran nya sebagai ketua koordinator semua projek serta kegiatan membuat gear di dalam Lab PSTI seperti mendapat pelumas untuk bisa berjalan laju! Lalu yang kedua ada Muhammad Fakhsi Albukhori (28--), mahasiswa yang satu ini handal di bidang perakitan serta penanganan komponen elektronika. Yang ketiga ada Ramadhan Triansyah (28--), mahasiswa ini juga ga kalah di bidang teknik merakit seperti Fakhsi, jangan di raguin deh skill nya!. Yang ke-empat ada Alessandro Farrel Gerrard Wijaya (28421014), seorang mahasiswa yang bersemangat mendalami dunia CyberSecurity serta gemar mengeksplor hal-hal baru! Yang ke-lima ada Gabriel Valentino Cuaca (28--), seorang mahasiswa aktif sebagai IoT Engineer di Lab PSTI UBL dengan pengalaman yang ga boleh di remehin! Yang ke-enam ada Gery Wijaya (2841--), Mahasiswa sosialis yang tertarik pada pengembangan sistem berbasis Internet of Things, kalau digabung dengan Gabriel, mereka menjadi duo yang tak tertandingi! Nah yang terakhir ini spesial, kenalin Tiara Angel (2841007), biasa di panggil \"Cira\" ini bersemangat dalam merancang arsitektur website sehingga berjalan lancar tanpa kendala! Ini lah mereka, 7 Anak Beasiswa Reka Inovasi tersebut adalah penghuni Lab PSTI. Ada yang ingin kamu tanyakan lebih lanjut? 😁 Misalnya \"Apa saja Projek yang sudah dibuat?\", atau \"Siapa aja Mahasiswa Beasiswa Reka Inovasi angkatan 25?\""
+        ]
+      },
+      {
+        "tag": "about_mhsreka25",
+        "patterns": [
+          "Siapa aja yang menjadi mahasiswa beasiswa Reka Inovasi?,Siapa aja yang jadi anak Beasiswa Reka Inovasi?,Siapa aja yang masuk reka?,Siapa aja yang dapet beasiswa reka?,Siapa aja mahasiswa tahun 2025 yang dapet beasiswa reka?,Siapa aja yang dapet beasiswa reka inovasi angkatan 25?,siapa aja anak beasiswa reka tahun 2025?,siapa aja yang masuk reka inovasi angkatan 25?,siapa aja mahasiswa tahun 2025 yang beasiswa reka inovasi?,kenalin anak-anak reka inovasi 2025 dong!"
+        ],
+        "responses": [
+          "Kenalin nih!!\nIni adalah mahasiswa yang mendapatkan Beasiswa Reka Inovasi angkatan 2025 dan menjadi bagian dari Lab PSTI 🚀\nYang pertama, ada **Muhammad Farel Fainaki**, mahasiswa yang berfokus pada **{skill_3}**, dengan karakter yang **{karakter_3}** dalam mengerjakan proyek-proyek di lab.\nBerikutnya, **Damar Aryo Saputra**, yang dikenal sebagai mahasiswa dengan ketertarikan pada **{skill_4}** serta berperan dalam **{peran_4}** untuk mendukung kegiatan Lab PSTI.\nTerakhir, **Achmad Luth Fallah**, mahasiswa yang memiliki minat di bidang **{skill_6}** dan berkontribusi dalam **{kontribusi_6}**, sehingga membantu jalannya berbagai aktivitas di Lab PSTI.\nItulah mereka, mahasiswa Beasiswa Reka Inovasi angkatan 2025 yang menjadi bagian dari keluarga Lab PSTI ✨  \nAda yang ingin kamu tanyakan lebih lanjut? 😄  \nMisalnya:\n- *Apa saja projek yang sudah dibuat?*  \n- *Skill apa saja yang dipelajari di Lab PSTI?*  \n- *Siapa aja Mahasiswa Beasiswa Reka Inovasi angkatan sebelumnya? (Angkatan 24)*\n"
+        ]
+      },
+      {
+        "tag": "info_beasiswa",
+        "patterns": [
+          "Gimana caranya dapetin beasiswa Reka Inovasi?,Mau nanya dong, apa itu beasiswa Reka Inovasi?,Beasiswa Reka Inovasi gimana dapetinnya?,Aku mau jadi mahasiswa beasiswa reka inovasi!"
+        ],
+        "responses": []
+      },
+      {
+        "tag": "about_projek",
+        "patterns": [
+          "Projek apa aja yang udah dibuat?,Projek apa aja yang pernah dibuat mahasiswa PSTI?,Di PSTI ada projek apa aja?,Projek apa aja yang pernah di kerjain?,Anak Lab PSTI suka ngerjain projek apa?"
+        ],
+        "responses": []
+      },
+      {
+        "tag": "fasilitas_lab",
+        "patterns": [
+          "Fasilitas Lab ada apa aja?,Di Lab PSTI ada apa aja?,Di dalam Lab PSTI ada apa aja?,Fasilitas Lab PSTI apa aja sih?,fasilitas lab apa aja?,ada apa aja di lab psti?,lab psti isinya apa?"
+        ],
+        "responses": []
+      },
+      {
+        "tag": "aturan_lab",
+        "patterns": [
+          "kira-kira apa aja aturan lab?,apa aja aturan lab?,di dalam lab psti ada aturan apa?"
+        ],
+        "responses": []
+      },
+      {
+        "tag": "kontak_lab",
+        "patterns": [
+          "kontak lab psti,hubungi lab psti,email lab?,wa lab psti,nomor admin lab?,instagram lab psti?,\nsosmed lab psti?,tanya lab ke siapa?,contact person lab?,admin lab siapa?,\nada telegram ga?,dm lab psti dimana?"
+        ],
+        "responses": [
+          "Kamu bisa hubungi Lab PSTI via email, WhatsApp, atau Instagram yaa. Kontak resmi tersedia di IG @rekainovasi|Untuk respon cepat, biasanya lewat WhatsApp atau DM Instagram"
+        ]
+      },
+      {
+        "tag": "jam_operasional",
+        "patterns": [
+          "lab buka jam berapa?,jam operasional psti,hari ini lab buka ga?,lab psti buka ga sekarang?,jam kerja lab,jadwal buka lab,lab tutup jam berapa?,bisa ke lab jam berapa?,lab buka tiap hari ga?,weekend buka ga?,hari sabtu buka ga?,minggu buka ga?"
+        ],
+        "responses": [
+          "Senin–Jumat buka jam 08.00–17.00 WIB, Sabtu sampai jam 14.00|Hari Minggu dan libur nasional lab tutup ya, Kalau mau datang, pastiin masih di jam operasional 👍"
+        ]
+      },
+      {
+        "tag": "lokasi_lab",
+        "patterns": [
+          "lab psti dimana?,lokasi lab psti,psti ada di gedung apa?,lantai berapa lab psti?,arah ke lab psti,lab psti ubl dimana?,tempat lab psti,psti letaknya dimana?,lab psti kampus mana?,gedung lab psti"
+        ],
+        "responses": [
+          "Lab PSTI ada di Gedung M lantai 1 Universitas Bandar Lampung yaa|Lokasinya di kampus UBL, Gedung M Lt.1 yaah. Kalau bingung, bisa tanya satpam atau kontak admin lab"
+        ]
+      },
+      {
+        "tag": "syarat_akses",
+        "patterns": [
+          "siapa aja yang boleh masuk?,boleh masuk ga?,lab psti buat siapa?,mahasiswa boleh masuk ga?,harus izin ga?,bisa masuk bebas ga?,syarat masuk lab,perlu surat ga?,anak luar ubl boleh ga?,umum boleh masuk ga?,alumni boleh ga?,harus bawa apa?,akses lab gimana?,lab terbuka ga?"
+        ],
+        "responses": [
+          "Lab PSTI bisa diakses mahasiswa (maupun) UBL dengan izin atau surat resmi terkecuali Mahasiswa dengan Beasiswa Reka Inovasi namun untuk kegiatan tertentu, perlu izin dosen atau admin lab|Pihak luar UBL bisa masuk kalau ada kerja sama atau izin resmi yaa"
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,2958 @@
+{
+  "timestamp": "2026-01-21T18:47:34.035Z",
+  "overall": {
+    "accuracy": 0.6,
+    "total": 30,
+    "correct": 18
+  },
+  "perIntent": {
+    "greeting": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 27,
+      "predictions": [
+        {
+          "confidence": 0.03292141854763031,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0003901312593370676,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.09182348102331161,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.08205734193325043,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.07636654376983643,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 4.561865996066672e-9,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0013141421368345618,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 4.4977031166126835e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 9.912856739902054e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000987514154985547,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00024521644809283316,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.012025965377688408,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0003074395644944161,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.027183178812265396,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00008570089266868308,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0031240065582096577,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00012956888531334698,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0001609212049515918,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000946687301620841,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.02545943111181259,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00037974698352627456,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.005403251387178898,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.03948165103793144,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 3.047746020001796e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0008236918947659433,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 5.339980901908348e-8,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.08139556646347046,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.0348934680223465,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00004920707942801528,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000002290054680997855,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "support": 3
+    },
+    "goodbye": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "tn": 28,
+      "predictions": [
+        {
+          "confidence": 0.044484008103609085,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0004126925196032971,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06292521953582764,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06543967872858047,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.02200472541153431,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 1.5661389340948517e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000142767108627595,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000020364217562018894,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00004369740781839937,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0005749231204390526,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000334791315253824,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.013952145352959633,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000012388124559947755,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.019546043127775192,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0002863149857148528,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00029345660004764795,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000008291843187180348,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000014404366083908826,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00774467783048749,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.18221627175807953,
+          "predicted": false,
+          "true": true
+        },
+        {
+          "confidence": 0.000022285830709734,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.02172817662358284,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.1561008095741272,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.000003910392933903495,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.007158075924962759,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000001485020220570732,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06481290608644485,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.041797563433647156,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00007434775034198537,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000048781988880364224,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 1,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "support": 2
+    },
+    "thanks": {
+      "tp": 3,
+      "fp": 4,
+      "fn": 0,
+      "tn": 23,
+      "predictions": [
+        {
+          "confidence": 0.2368524819612503,
+          "predicted": true,
+          "true": false
+        },
+        {
+          "confidence": 0.10298526287078857,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06642624735832214,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.07568434625864029,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.033735476434230804,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00002313738332304638,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.019069744274020195,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0006999743636697531,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00195836229249835,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.006416694726794958,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.011315058916807175,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.2610950469970703,
+          "predicted": true,
+          "true": false
+        },
+        {
+          "confidence": 0.0005288546672090888,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.18720561265945435,
+          "predicted": true,
+          "true": false
+        },
+        {
+          "confidence": 0.016057005152106285,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.006740570068359375,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0006361427949741483,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0006999507895670831,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.827869176864624,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.16186100244522095,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0012018602574244142,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.6487486362457275,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.12813834846019745,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0006930095260031521,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.8232863545417786,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.00004999104930902831,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06884399056434631,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.23996023833751678,
+          "predicted": true,
+          "true": false
+        },
+        {
+          "confidence": 0.03777649998664856,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.004373932257294655,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 0.42857142857142855,
+      "recall": 1,
+      "f1": 0.6,
+      "support": 3
+    },
+    "about_psti": {
+      "tp": 5,
+      "fp": 5,
+      "fn": 0,
+      "tn": 20,
+      "predictions": [
+        {
+          "confidence": 0.04662849009037018,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.049117546528577805,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.03951133415102959,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.047026585787534714,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.004533455707132816,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.9987970590591431,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.0001252613146789372,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.995459258556366,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.9874994158744812,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.4277205169200897,
+          "predicted": true,
+          "true": false
+        },
+        {
+          "confidence": 0.6479527354240417,
+          "predicted": true,
+          "true": false
+        },
+        {
+          "confidence": 0.03315305709838867,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 9.526876283416641e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.011913163587450981,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.7980664372444153,
+          "predicted": true,
+          "true": false
+        },
+        {
+          "confidence": 0.012010631151497364,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.016117798164486885,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.02826649323105812,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.04417964816093445,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.20447954535484314,
+          "predicted": true,
+          "true": false
+        },
+        {
+          "confidence": 0.000002240086359961424,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06378665566444397,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.1461964100599289,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.979907751083374,
+          "predicted": true,
+          "true": false
+        },
+        {
+          "confidence": 0.04890231043100357,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.9986485838890076,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.05064106732606888,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.025069674476981163,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06729108840227127,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.9475241899490356,
+          "predicted": true,
+          "true": true
+        }
+      ],
+      "precision": 0.5,
+      "recall": 1,
+      "f1": 0.6666666666666666,
+      "support": 5
+    },
+    "about_Reka&PSTI": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 30,
+      "predictions": [
+        {
+          "confidence": 0.04071558639407158,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0016749176429584622,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.08296734094619751,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.07178982347249985,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.12815795838832855,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 1.0025879504382829e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.011215079575777054,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0000048354868340538815,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000010175043826166075,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0036081518046557903,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0011644471669569612,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.025845162570476532,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0033524774480611086,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.04502086713910103,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0005326420068740845,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.008769350126385689,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0007948498823679984,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0009406304452568293,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.001760259736329317,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.039047978818416595,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.004065501503646374,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00814442802220583,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.05152936652302742,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000004357826583145652,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0015431231586262584,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 8.189759341803438e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06954395771026611,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.04334370419383049,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00036221437039785087,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000021351104805944487,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "support": 0
+    },
+    "about_Skill": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 30,
+      "predictions": [
+        {
+          "confidence": 0.0314946174621582,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0055906083434820175,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0489792674779892,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.05155104026198387,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.020455481484532356,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000002546421910665231,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00215138029307127,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00003216359982616268,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000052043760661035776,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.03405221924185753,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.010594316758215427,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.022836370393633842,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000050340611778665334,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.01760886050760746,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0038136972580105066,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.11017398536205292,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.07315565645694733,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.07701176404953003,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0034227054566144943,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0326545313000679,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00008969823102233931,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.01253579556941986,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.04412301629781723,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0000639754071016796,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0031233078334480524,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000011796948456321843,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.05422265827655792,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.021817317232489586,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.001591527252458036,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00011767647811211646,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "support": 0
+    },
+    "about_mhsreka24": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "tn": 28,
+      "predictions": [
+        {
+          "confidence": 0.07529700547456741,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.018444206565618515,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.07733740657567978,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06994643062353134,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.17008233070373535,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 1.5617763438058319e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.4450385868549347,
+          "predicted": true,
+          "true": false
+        },
+        {
+          "confidence": 0.00000609236303716898,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000016387512005167082,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0032757208682596684,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0024791222531348467,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.08910700678825378,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.48415401577949524,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.14792847633361816,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0014028785517439246,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.017677396535873413,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0014060017419978976,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.001310716732405126,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.005516075529158115,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.026656491681933403,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.5005598068237305,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.019728435203433037,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.037794459611177444,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000011599323443078902,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.004988393280655146,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 6.496104560937965e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06808348000049591,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.10305938869714737,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.004640211816877127,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000051586244808277115,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 0.5,
+      "recall": 1,
+      "f1": 0.6666666666666666,
+      "support": 1
+    },
+    "about_mhsreka25": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "tn": 28,
+      "predictions": [
+        {
+          "confidence": 0.07920487970113754,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00767047144472599,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.08277557045221329,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0725753977894783,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.19410192966461182,
+          "predicted": true,
+          "true": false
+        },
+        {
+          "confidence": 1.4290740146805092e-8,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.43095722794532776,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0000012390792107908055,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000003854008809867082,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.001121680368669331,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0007245733286254108,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0863524079322815,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.5015703439712524,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.17404314875602722,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00042338992352597415,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00696073891595006,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000309047638438642,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00032053678296506405,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.005108743906021118,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.028324056416749954,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.4796016216278076,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.018877586349844933,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.039678819477558136,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0000018404992943032994,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.004387618042528629,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 7.438489291189399e-8,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.07034958899021149,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.11994525790214539,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.001307662227191031,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000012193881048006006,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 0.5,
+      "recall": 1,
+      "f1": 0.6666666666666666,
+      "support": 1
+    },
+    "info_beasiswa": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "tn": 29,
+      "predictions": [
+        {
+          "confidence": 0.05203990638256073,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.006237806752324104,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.08693758398294449,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.07504129409790039,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.18586647510528564,
+          "predicted": false,
+          "true": true
+        },
+        {
+          "confidence": 6.890665815717512e-8,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.019806338474154472,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000002582590923339012,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000007620094493177021,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0025961219798773527,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0014178950805217028,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.04141603782773018,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.007500507868826389,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06769603490829468,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0005763727822341025,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.014089325442910194,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0007981358212418854,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0007835302385501564,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0021631226409226656,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.024134188890457153,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.009062414988875389,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.009572985582053661,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.036743178963661194,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000004778245966008399,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0019901853520423174,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 3.208036787327728e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.07240110635757446,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.05710390582680702,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0018056565895676613,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00002784260141197592,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "support": 1
+    },
+    "about_projek": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "tn": 29,
+      "predictions": [
+        {
+          "confidence": 0.035029079765081406,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.028021546080708504,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0487268790602684,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.05322128161787987,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.018175464123487473,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00013804261106997728,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.006447300780564547,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0003376736422069371,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0004565310082398355,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.2229251116514206,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.08862406760454178,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0360550731420517,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00010520239447942004,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.02368999272584915,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.03507068008184433,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.21839256584644318,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.3188769817352295,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.33869466185569763,
+          "predicted": false,
+          "true": true
+        },
+        {
+          "confidence": 0.0027384895365685225,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.02779473178088665,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00022277979587670416,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.010739942081272602,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.03853785991668701,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0018173203570768237,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.002596610691398382,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0003145410737488419,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.05555961653590202,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.024219829589128494,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.016446685418486595,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0012653061421588063,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "support": 1
+    },
+    "fasilitas_lab": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "tn": 26,
+      "predictions": [
+        {
+          "confidence": 0.04199592024087906,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.04988177865743637,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.05608989670872688,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06134733930230141,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.030353210866451263,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0000430609579780139,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.009082596749067307,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00011832186282845214,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00019536959007382393,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.1518200933933258,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.08208903670310974,
+          "predicted": false,
+          "true": true
+        },
+        {
+          "confidence": 0.04738040640950203,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00011662247561616823,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.031985800713300705,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.029044004157185555,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.4109457731246948,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.4522271752357483,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.4033268392086029,
+          "predicted": true,
+          "true": false
+        },
+        {
+          "confidence": 0.0037548537366092205,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.020038507878780365,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00027326340205036104,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.013919764198362827,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.03091171756386757,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0010044502560049295,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0036231905687600374,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00009114667773246765,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06352078914642334,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.030007092282176018,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.028969911858439445,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000734866363927722,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1": 0.6666666666666666,
+      "support": 3
+    },
+    "aturan_lab": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 30,
+      "predictions": [
+        {
+          "confidence": 0.027597006410360336,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.01171264797449112,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.05047089233994484,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.052900251001119614,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.021524839103221893,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000033179901947733015,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0015532445395365357,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00012837459507863969,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00020457715436350554,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.07798060774803162,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.031513381749391556,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.01964232139289379,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00004040536441607401,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.016579797491431236,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.010137381963431835,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.12285470217466354,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.11864005774259567,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.13043273985385895,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0015446700854226947,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.022801803424954414,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00007373788685072213,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00681137852370739,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.033572956919670105,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00043645501136779785,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0015203370712697506,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00009420505375601351,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.05589088425040245,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.019239500164985657,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.006033360958099365,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000610149756539613,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "support": 0
+    },
+    "kontak_lab": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 28,
+      "predictions": [
+        {
+          "confidence": 0.13474880158901215,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.6813331842422485,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.060376714915037155,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06878252327442169,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.033298857510089874,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0009404720040038228,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.02683296985924244,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.002816935535520315,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.008683093823492527,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.053104955703020096,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.10925153642892838,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.19742776453495026,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0004272462392691523,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.122660331428051,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0933370366692543,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.05370978266000748,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.014749699272215366,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.01539304107427597,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.05984606221318245,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.07798896729946136,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00121771648991853,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.09461698681116104,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.07526544481515884,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.01554399449378252,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06392677128314972,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0007283588056452572,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06705950200557709,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.1216588094830513,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.8171237707138062,
+          "predicted": true,
+          "true": true
+        },
+        {
+          "confidence": 0.04323602467775345,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "support": 2
+    },
+    "jam_operasional": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 30,
+      "predictions": [
+        {
+          "confidence": 0.10064461082220078,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.03642784059047699,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06778918206691742,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06610880047082901,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.05183514207601547,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000021966179701848887,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.026248231530189514,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00037016195710748434,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0008652648539282382,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.01280475128442049,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.012034558691084385,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.10957003384828568,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0018329198937863111,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.10080555081367493,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.01107277162373066,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.01339711807668209,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0021037727128714323,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0025723709259182215,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.03292694315314293,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.09618031233549118,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0032267614733427763,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.061940550804138184,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.08891946822404861,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0005057971575297415,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.031707022339105606,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00005781734944321215,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.06495753675699234,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.10440285503864288,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.016515174880623817,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.001969912787899375,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "support": 0
+    },
+    "lokasi_lab": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "tn": 27,
+      "predictions": [
+        {
+          "confidence": 0.0083280885592103,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000016820678865769878,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.04057640954852104,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.04332033917307854,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.005954681430011988,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 3.410056959030072e-10,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000007112749699444976,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 7.129061430077854e-8,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 1.2766186330281926e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00022865064966026694,
+          "predicted": false,
+          "true": true
+        },
+        {
+          "confidence": 0.000046033870603423566,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0014994798693805933,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 1.699651193121099e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.002689771819859743,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000012833153050451074,
+          "predicted": false,
+          "true": true
+        },
+        {
+          "confidence": 0.00036411365726962686,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000014403698514797725,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000020227194909239188,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00009264145774068311,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.011668289080262184,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 3.409791986541677e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0009566040243953466,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.022511616349220276,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 2.2320497450323273e-8,
+          "predicted": false,
+          "true": true
+        },
+        {
+          "confidence": 0.00007881967030698434,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 6.505136873613537e-9,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.047025058418512344,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.005686463788151741,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0000014189766943673021,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 1.8412103486298292e-7,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "support": 3
+    },
+    "syarat_akses": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "tn": 25,
+      "predictions": [
+        {
+          "confidence": 0.01201813854277134,
+          "predicted": false,
+          "true": true
+        },
+        {
+          "confidence": 0.00008258877642219886,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.036286622285842896,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.04320752993226051,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.003553443355485797,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 1.6143602010743052e-8,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.000008016842002689373,
+          "predicted": false,
+          "true": true
+        },
+        {
+          "confidence": 0.000001432158910574799,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0000025262602321163286,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0007823223131708801,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0002131999790435657,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0026417274493724108,
+          "predicted": false,
+          "true": true
+        },
+        {
+          "confidence": 8.152542108064154e-8,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0034433817490935326,
+          "predicted": false,
+          "true": true
+        },
+        {
+          "confidence": 0.00008082556450972334,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0004965389962308109,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00003243234459660016,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.00005120543937664479,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0003852205700241029,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.018693894147872925,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 2.2727047621629026e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.002488799626007676,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.03049488179385662,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 4.959129000781104e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0003442214510869235,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 1.9529858263922506e-7,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.04569227620959282,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.007794925477355719,
+          "predicted": false,
+          "true": true
+        },
+        {
+          "confidence": 0.000011313106369925663,
+          "predicted": false,
+          "true": false
+        },
+        {
+          "confidence": 0.0000036985015867685433,
+          "predicted": false,
+          "true": false
+        }
+      ],
+      "precision": 0,
+      "recall": 0,
+      "f1": 0,
+      "support": 5
+    }
+  },
+  "confusionMatrix": [
+    [
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "thresholdAnalysis": [
+    {
+      "threshold": 0.3,
+      "accepted": 20,
+      "rejected": 10,
+      "correct": 14,
+      "accuracy": 0.7,
+      "coverage": 0.6666666666666666
+    },
+    {
+      "threshold": 0.4,
+      "accepted": 20,
+      "rejected": 10,
+      "correct": 14,
+      "accuracy": 0.7,
+      "coverage": 0.6666666666666666
+    },
+    {
+      "threshold": 0.5,
+      "accepted": 15,
+      "rejected": 15,
+      "correct": 12,
+      "accuracy": 0.8,
+      "coverage": 0.5
+    },
+    {
+      "threshold": 0.6,
+      "accepted": 13,
+      "rejected": 17,
+      "correct": 10,
+      "accuracy": 0.7692307692307693,
+      "coverage": 0.43333333333333335
+    },
+    {
+      "threshold": 0.7,
+      "accepted": 10,
+      "rejected": 20,
+      "correct": 8,
+      "accuracy": 0.8,
+      "coverage": 0.3333333333333333
+    },
+    {
+      "threshold": 0.8,
+      "accepted": 9,
+      "rejected": 21,
+      "correct": 8,
+      "accuracy": 0.8888888888888888,
+      "coverage": 0.3
+    },
+    {
+      "threshold": 0.9,
+      "accepted": 6,
+      "rejected": 24,
+      "correct": 5,
+      "accuracy": 0.8333333333333334,
+      "coverage": 0.2
+    }
+  ],
+  "recommendedThreshold": {
+    "threshold": 0.8,
+    "accepted": 9,
+    "rejected": 21,
+    "correct": 8,
+    "accuracy": 0.8888888888888888,
+    "coverage": 0.3
+  }
+}
