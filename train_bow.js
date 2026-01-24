@@ -1,11 +1,7 @@
-/**
- * TRAIN BoW (Bag of Words) - PSTI Chatbot
- * Arsitektur: BoW + Dense
- * Pure tfjs, NO tfjs-node
- */
-
 const tf = require('@tensorflow/tfjs');
 const fs = require('fs');
+const stopwords = require('./stopwords');
+
 
 class BoWTrainer {
   constructor(intentsPath) {
@@ -21,15 +17,17 @@ class BoWTrainer {
       .toLowerCase()
       .replace(/[^a-z0-9\s]/g, ' ')
       .replace(/\s+/g, ' ')
-      .trim();
-  }
+      .trim()
+      .split(' ')
+      .filter(w => w && !stopwords.includes(w));
+  }  
 
   buildVocabulary() {
     console.log('📚 Building vocabulary...');
     this.intents.intents.forEach(intent => {
       intent.patterns.forEach(p => {
         p.split(',').forEach(text => {
-          const words = this.preprocess(text).split(' ');
+          const words = this.preprocess(text);
           words.forEach(w => this.vocab.add(w));
         });
       });
@@ -44,7 +42,12 @@ class BoWTrainer {
 
   textToBoW(text) {
     const vector = new Array(this.vocab.size).fill(0);
-    const words = this.preprocess(text).split(' ');
+    const words = this.preprocess(text);
+
+// 🔥 ERROR HANDLER LOGIC
+if (words.length === 0) {
+  return null; // tanda tidak layak diprediksi
+}
     words.forEach(w => {
       if (this.wordIndex[w] !== undefined) {
         vector[this.wordIndex[w]] += 1;
@@ -63,8 +66,11 @@ class BoWTrainer {
 
       intent.patterns.forEach(p => {
         p.split(',').forEach(text => {
-          xs.push(this.textToBoW(text));
-          ys.push(idx);
+          const bow = this.textToBoW(text);
+if (bow) {
+  xs.push(bow);
+  ys.push(idx);
+}
         });
       });
     });

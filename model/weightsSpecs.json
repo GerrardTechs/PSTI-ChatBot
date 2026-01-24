@@ -2,7 +2,7 @@
   {
     "name": "dense_Dense1/kernel",
     "shape": [
-      137,
+      108,
       128
     ],
     "dtype": "float32"
