@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-console.log('🚀 Initializing chatbot server...');
+console.log('🚀 Knowledge Composer Chatbot Starting...');
 
 // ================= LOAD KNOWLEDGE =================
 const knowledge = JSON.parse(
@@ -19,6 +19,9 @@ const reka24 = knowledge.mahasiswa_reka["2024"];
 const reka25 = knowledge.mahasiswa_reka["2025"];
 const projects = knowledge.projects;
 
+const allStudents = [...reka24, ...reka25];
+
+// ================= SESSION MEMORY =================
 const sessions = {};
 
 let model, wordIndex, intentMap, intents, vocabSize;
@@ -34,36 +37,38 @@ function preprocess(text) {
     .filter(w => w && !stopwords.includes(w));
 }
 
-// ================= VALIDATOR (GERBANG UTAMA) =================
+// ================= MEANINGFUL CHECK =================
 function isMeaningfulInput(words) {
-  if (words.length === 0) return false;
+  const msg = words.join(' ');
 
-  const known = words.filter(w => wordIndex[w] !== undefined);
-  const noiseRatio = 1 - (known.length / words.length);
+  const knowledgeKeywords = [
+    'iot','project','projek','reka','mahasiswa',
+    'psti','lab','skill','siapa','apa'
+  ];
 
-  // Jika lebih dari 60% kata adalah noise → tolak
-  if (noiseRatio > 0.6) return false;
+  // Kalau ada kata penting → pasti bermakna
+  if (knowledgeKeywords.some(k => msg.includes(k))) {
+    return true;
+  }
 
-  return known.length >= 1;
+  // Kalau tidak ada huruf jelas / cuma random
+  if (words.length < 2) return false;
+
+  return true;
 }
 
-
-// ================= TEXT → BoW =================
+// ================= MODEL =================
 function textToBoW(text) {
   const vector = new Array(vocabSize).fill(0);
-  const words = preprocess(text);
-
-  words.forEach(w => {
+  preprocess(text).forEach(w => {
     if (wordIndex[w] !== undefined) {
       vector[wordIndex[w]] += 1;
     }
   });
-
   return tf.tensor2d([vector]);
 }
 
-// ================= LOAD MODEL =================
-async function loadModelManual() {
+async function loadModel() {
   const topology = JSON.parse(fs.readFileSync('./model/model.json'));
   const weightSpecs = JSON.parse(fs.readFileSync('./model/weightsSpecs.json'));
   const weightData = fs.readFileSync('./model/weights.bin');
@@ -78,7 +83,7 @@ async function loadModelManual() {
 }
 
 async function loadAssets() {
-  model = await loadModelManual();
+  model = await loadModel();
 
   const tokenizer = JSON.parse(fs.readFileSync('./tokenizer.json'));
   wordIndex = tokenizer.word_index;
@@ -90,10 +95,9 @@ async function loadAssets() {
 
   intents = JSON.parse(fs.readFileSync('./intents.json'));
 
-  console.log('✅ Assets loaded');
+  console.log('✅ Assets Loaded');
 }
 
-// ================= PREDICT =================
 function predictIntent(text) {
   const input = textToBoW(text);
   const prediction = model.predict(input);
@@ -112,65 +116,98 @@ function predictIntent(text) {
   return { tag, confidence };
 }
 
-function getResponse(tag) {
-  const intent = intents.intents.find(i => i.tag === tag);
-  if (!intent) return 'Maaf, saya tidak mengerti.';
-  return intent.responses[0].split('|')[0];
-}
-
 // ================= PRONOUN RESOLVER =================
-function resolvePronoun(words, session) {
-  const pronouns = ['dia', 'nya', 'itu', 'tadi', 'mereka'];
-
-  if (words.some(w => pronouns.includes(w)) && session.lastEntity) {
+function resolvePronoun(message, session) {
+  const pronouns = ['dia', 'nya', 'yang tadi', 'itu', 'mereka'];
+  if (pronouns.some(p => message.includes(p)) && session.lastEntity) {
     return session.lastEntity;
   }
-
   return null;
 }
 
-// ================= KNOWLEDGE ENGINE (WORD BASED) =================
-function handleKnowledge(words, session) {
-  const entity = resolvePronoun(words, session);
+// ================= KNOWLEDGE COMPOSERS =================
+function composeIoTStory(session) {
+  const iotPeople = allStudents.filter(m =>
+    m.skills?.some(s => s.toLowerCase().includes('iot'))
+  );
 
-  // ===== List mahasiswa
-  if (words.includes('reka') && words.includes('24')) {
-    session.context = 'mahasiswa';
-    session.lastEntity = null;
+  const relatedProjects = projects
+    .filter(p => p.kategori.toLowerCase().includes('iot'))
+    .map(p => p.nama);
 
-    return (
-      "Mahasiswa Reka 24:\n" +
-      reka24.map(m => "• " + m.nama).join('\n')
-    );
-  }
+  let text = "Di mahasiswa Reka Inovasi, ada beberapa yang fokus di IoT 👇\n\n";
 
-  // ===== Skill IoT
-  if (words.includes('iot')) {
-    session.context = 'skill';
+  iotPeople.forEach(p => {
+    text += `• ${p.nama} — ${p.role || 'Aktif di proyek IoT'}\n`;
+  });
 
-    const result = reka24.filter(m =>
-      m.skills.some(s => s.toLowerCase().includes('iot'))
-    );
+  text += `\nMereka terlibat di proyek seperti: ${relatedProjects.join(', ')}.\n`;
+  text += "\nMau tahu detail proyek atau orangnya? Tinggal tanya aja ya 😊";
 
-    if (result.length === 0) return "Belum ada yang fokus IoT.";
+  session.context = 'iot_story';
+  return text;
+}
 
-    session.lastEntity = result[0];
+function composeProjectStory(session) {
+  let text = "Berikut beberapa project unggulan Lab PSTI 🚀\n\n";
 
-    return "Yang jago IoT: " + result.map(r => r.nama).join(', ');
-  }
+  projects.forEach(p => {
+    text += `• ${p.nama} (${p.kategori}) — ${p.deskripsi}\n`;
+  });
 
-  // ===== Detail orang dari pronoun
+  text += "\nProject ini dikerjakan oleh mahasiswa Reka Inovasi dari berbagai angkatan.";
+  session.context = 'project_story';
+
+  return text;
+}
+
+function composeMahasiswaStory(angkatan, session) {
+  const data = angkatan === '24' ? reka24 : reka25;
+
+  let text = `Mahasiswa Reka Inovasi angkatan ${angkatan} 👇\n\n`;
+  data.forEach(m => {
+    text += `• ${m.nama} — ${m.role || 'Aktif di Lab PSTI'}\n`;
+  });
+
+  text += "\nMau tahu skill atau project mereka? Tinggal tanya ya 😊";
+  session.context = 'mahasiswa_story';
+
+  return text;
+}
+
+// ================= KNOWLEDGE ENGINE =================
+function knowledgeEngine(message, session) {
+  const msg = message.toLowerCase();
+
+  const entity = resolvePronoun(msg, session);
   if (entity) {
     return `${entity.nama} adalah ${entity.role}. Skill: ${entity.skills.join(', ')}`;
   }
 
-  // ===== Project
-  if (words.includes('project') || words.includes('projek')) {
-    session.context = 'project';
-    return projects.map(p => `• ${p.nama} (${p.kategori})`).join('\n');
+  if (msg.includes('iot')) {
+    return composeIoTStory(session);
+  }
+
+  if (msg.includes('project') || msg.includes('projek')) {
+    return composeProjectStory(session);
+  }
+
+  if (msg.includes('reka') && msg.includes('24')) {
+    return composeMahasiswaStory('24', session);
+  }
+
+  if (msg.includes('reka') && msg.includes('25')) {
+    return composeMahasiswaStory('25', session);
   }
 
   return null;
+}
+
+// ================= INTENT RESPONSE =================
+function getResponse(tag) {
+  const intent = intents.intents.find(i => i.tag === tag);
+  if (!intent) return 'Maaf, saya tidak mengerti.';
+  return intent.responses[0].split('|')[0];
 }
 
 // ================= API =================
@@ -178,25 +215,22 @@ app.post('/chat', (req, res) => {
   const { userId, message } = req.body;
 
   if (!sessions[userId]) {
-    sessions[userId] = {
-      context: null,
-      lastEntity: null
-    };
+    sessions[userId] = { context: null, lastEntity: null };
   }
 
   const session = sessions[userId];
 
   const words = preprocess(message);
 
-  // ✅ VALIDATOR PALING AWAL
+  // 🚫 Garbage filter dulu
   if (!isMeaningfulInput(words)) {
     return res.json({
-      response: "Maaf, saya tidak memahami apa yang kamu maksud. Bisa diulang dengan lebih jelas?"
+      response: "Maaf, saya tidak memahami apa yang kamu maksud. Bisa diulang?"
     });
   }
 
-  // ✅ KNOWLEDGE SETELAH VALID
-  const knowledgeReply = handleKnowledge(words, session);
+  // 🧠 Knowledge Composer dulu
+  const knowledgeReply = knowledgeEngine(message, session);
   if (knowledgeReply) {
     return res.json({
       from: 'knowledge',
@@ -204,12 +238,12 @@ app.post('/chat', (req, res) => {
     });
   }
 
-  // ✅ BARU MODEL
+  // 🤖 Fallback ke model
   const { tag, confidence } = predictIntent(message);
 
   if (confidence < 0.4) {
     return res.json({
-      response: "Maaf, saya kurang memahami."
+      response: "Maaf, saya kurang memahami. Bisa diperjelas?"
     });
   }
 
