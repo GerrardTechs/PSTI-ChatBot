@@ -1,210 +1,63 @@
-const tf = require('@tensorflow/tfjs');
+// train_bow.js
 const fs = require('fs');
-const stopwords = require('./stopwords');
+const { preprocess } = require('./src/nlp/preprocess');
 
+const intents = JSON.parse(
+  fs.readFileSync('./src/data/intents.json')
+).intents;
 
-class BoWTrainer {
-  constructor(intentsPath) {
-    this.intents = JSON.parse(fs.readFileSync(intentsPath, 'utf8'));
-    this.vocab = new Set();
-    this.wordIndex = {};
-    this.intentMap = {};
-    this.model = null;
-  }
-
-  preprocess(text) {
-    return text
-      .toLowerCase()
-      .replace(/[^a-z0-9\s]/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim()
-      .split(' ')
-      .filter(w => w && !stopwords.includes(w));
-  }  
-
-  buildVocabulary() {
-    console.log('📚 Building vocabulary...');
-    this.intents.intents.forEach(intent => {
-      intent.patterns.forEach(p => {
-        p.split(',').forEach(text => {
-          const words = this.preprocess(text);
-          words.forEach(w => this.vocab.add(w));
-        });
-      });
-    });
-
-    Array.from(this.vocab).forEach((word, i) => {
-      this.wordIndex[word] = i;
-    });
-
-    console.log(`✅ Vocabulary size: ${this.vocab.size}`);
-  }
-
-  textToBoW(text) {
-    const vector = new Array(this.vocab.size).fill(0);
-    const words = this.preprocess(text);
-
-// 🔥 ERROR HANDLER LOGIC
-if (words.length === 0) {
-  return null; // tanda tidak layak diprediksi
-}
-    words.forEach(w => {
-      if (this.wordIndex[w] !== undefined) {
-        vector[this.wordIndex[w]] += 1;
-      }
-    });
-    return vector;
-  }
-
-  prepareData() {
-    console.log('📊 Preparing dataset...');
-    const xs = [];
-    const ys = [];
-
-    this.intents.intents.forEach((intent, idx) => {
-      this.intentMap[intent.tag] = idx;
-
-      intent.patterns.forEach(p => {
-        p.split(',').forEach(text => {
-          const bow = this.textToBoW(text);
-if (bow) {
-  xs.push(bow);
-  ys.push(idx);
-}
-        });
-      });
-    });
-
-    const xTensor = tf.tensor2d(xs);
-    const yTensor = tf.oneHot(
-      tf.tensor1d(ys, 'int32'),
-      this.intents.intents.length
-    );
-
-    console.log(`   Samples: ${xs.length}`);
-    console.log(`   Intents: ${this.intents.intents.length}`);
-
-    return { xTensor, yTensor };
-  }
-
-  buildModel(inputSize, outputSize) {
-    console.log('🧠 Building model...');
-    const model = tf.sequential();
-
-    model.add(tf.layers.dense({
-      inputShape: [inputSize],
-      units: 128,
-      activation: 'relu'
-    }));
-
-    model.add(tf.layers.dropout({ rate: 0.3 }));
-
-    model.add(tf.layers.dense({
-      units: 64,
-      activation: 'relu'
-    }));
-
-    model.add(tf.layers.dense({
-      units: outputSize,
-      activation: 'softmax'
-    }));
-
-    model.compile({
-      optimizer: tf.train.adam(0.001),
-      loss: 'categoricalCrossentropy',
-      metrics: ['accuracy']
-    });
-
-    return model;
-  }
-
-  async train() {
-    this.buildVocabulary();
-    const { xTensor, yTensor } = this.prepareData();
-
-    this.model = this.buildModel(this.vocab.size, this.intents.intents.length);
-
-    console.log('🚀 Training...\n');
-
-    await this.model.fit(xTensor, yTensor, {
-      epochs: 200,
-      batchSize: 8,
-      shuffle: true,
-      validationSplit: 0.2,
-      callbacks: {
-        onEpochEnd: (e, logs) => {
-          console.log(
-            `Epoch ${e + 1} | loss=${logs.loss.toFixed(4)} acc=${(logs.acc * 100).toFixed(1)}%`
-          );
-        }
-      }
-    });
-  }
-
-  async save(modelPath = './model') {
-    if (!fs.existsSync(modelPath)) {
-      fs.mkdirSync(modelPath, { recursive: true });
-    }
-  
-    console.log('💾 Saving model with proper IOHandler...');
-  
-    const saveHandler = {
-      save: async (artifacts) => {
-        // simpan model.json persis seperti tfjs mau
-        fs.writeFileSync(
-          `${modelPath}/model.json`,
-          JSON.stringify(artifacts.modelTopology, null, 2)
-        );
-  
-        fs.writeFileSync(
-          `${modelPath}/weights.bin`,
-          Buffer.from(artifacts.weightData)
-        );
-  
-        fs.writeFileSync(
-          `${modelPath}/weightsSpecs.json`,
-          JSON.stringify(artifacts.weightSpecs, null, 2)
-        );
-  
-        return {
-          modelArtifactsInfo: {
-            dateSaved: new Date(),
-            modelTopologyType: 'JSON',
-            weightDataBytes: artifacts.weightData.byteLength
-          }
-        };
-      }
-    };
-  
-    await this.model.save(saveHandler);
-  
-    // tokenizer
-    fs.writeFileSync(
-      './tokenizer.json',
-      JSON.stringify({
-        word_index: this.wordIndex,
-        vocab_size: this.vocab.size
-      }, null, 2)
-    );
-  
-    // metadata
-    fs.writeFileSync(
-      `${modelPath}/metadata.json`,
-      JSON.stringify({
-        intentMap: this.intentMap,
-        numClasses: this.intents.intents.length
-      }, null, 2)
-    );
-  
-    console.log('✅ Model saved correctly!');
-  }
-  
+// pastikan folder model ada
+if (!fs.existsSync('./model')) {
+  fs.mkdirSync('./model');
 }
 
-async function main() {
-  const trainer = new BoWTrainer('./intents.json');
-  await trainer.train();
-  await trainer.save();
+let vocab = new Set();
+let documents = [];
+
+// ================= BUILD VOCAB & DOCUMENTS =================
+intents.forEach(intent => {
+  intent.patterns.forEach(pattern => {
+    const words = preprocess(pattern).split(' ');
+
+    words.forEach(w => vocab.add(w));
+
+    documents.push({
+      tag: intent.tag,
+      words
+    });
+  });
+});
+
+vocab = Array.from(vocab);
+fs.writeFileSync('./model/vocab.json', JSON.stringify(vocab, null, 2));
+
+// ================= HELPER =================
+function wordsToBow(words) {
+  const bow = new Array(vocab.length).fill(0);
+  words.forEach(w => {
+    const idx = vocab.indexOf(w);
+    if (idx !== -1) bow[idx] += 1;
+  });
+  return bow;
 }
 
-main();
+// ================= BUILD DOC VECTORS =================
+let docVectors = [];
+
+documents.forEach(doc => {
+  const bow = wordsToBow(doc.words);
+
+  docVectors.push({
+    tag: doc.tag,
+    vector: bow
+  });
+});
+
+fs.writeFileSync(
+  './model/doc_vectors.json',
+  JSON.stringify(docVectors, null, 2)
+);
+
+console.log('✅ Training BoW selesai!');
+console.log(`📚 Vocab: ${vocab.length}`);
+console.log(`🧾 Total patterns: ${docVectors.length}`);

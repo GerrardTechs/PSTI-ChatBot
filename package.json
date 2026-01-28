@@ -1,40 +1,19 @@
 {
-  "name": "psti-chatbot-optimized",
-  "version": "1.0.0",
-  "description": "PSTI Chatbot dengan optimasi LSTM + TensorFlow.js (pure JS, no native bindings)",
-  "main": "server_optimized.js",
+  "name": "psti-chatbot",
+  "version": "3.1.0",
+  "main": "server.js",
   "scripts": {
-    "train": "node train_optimized.js",
-    "train:tune": "node train_optimized.js --tune",
-    "evaluate": "node evaluate.js",
-    "test": "node test.js",
-    "test:preprocessor": "node preprocessor.js",
-    "start": "node server_optimized.js",
-    "dev": "nodemon server_optimized.js",
-    "full-pipeline": "npm run train && npm run evaluate && npm run test"
+    "train": "node train_bow.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "keywords": [
-    "chatbot",
-    "intent-classification",
-    "lstm",
-    "tensorflow-js",
-    "indonesian-nlp",
-    "express"
-  ],
-  "author": "PSTI Team",
-  "license": "MIT",
   "dependencies": {
     "@tensorflow/tfjs": "^4.22.0",
-    "axios": "^1.13.2",
-    "body-parser": "^2.2.2",
     "cors": "^2.8.5",
     "express": "^4.22.1",
-    "openai": "^6.16.0"
+    "sastrawijs": "^1.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  },
-  "engines": {
-    "node": ">=14.0.0"
   }
 }

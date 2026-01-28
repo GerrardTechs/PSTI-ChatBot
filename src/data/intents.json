@@ -58,7 +58,7 @@
     },
     {
       "tag": "info_beasiswa",
-      "patterns": ["Gimana caranya dapetin beasiswa Reka Inovasi?","Mau nanya dong, apa itu beasiswa Reka Inovasi?","Beasiswa Reka Inovasi gimana dapetinnya?","Aku mau jadi mahasiswa beasiswa reka inovasi!"],
+      "patterns": ["Gimana caranya dapetin beasiswa Reka Inovasi?","Mau nanya dong, apa itu beasiswa Reka Inovasi?","Beasiswa Reka Inovasi gimana dapetinnya?","Aku mau jadi mahasiswa beasiswa reka inovasi!","apa itu beasiswa reka inovasi?"],
       "responses": ["Beasiswa Reka Inovasi bersifat pengajuan. Mahasiswa baru dapat mengajukan setelah diterima di UBL melalui Jalur Madani dan registrasi ulang. Jika disetujui, mahasiswa mengikuti Pre College 3 minggu di Pusat Studi atau Lab terkait. Persyaratan meliputi scan E-KTP, kartu pelajar, kartu keluarga, ijazah SMA/SMK/MA, SKL, surat rekomendasi kepala sekolah, sertifikat kejuaraan, dan foto diri ukuran 4R full body."]
     },
     {
@@ -80,6 +80,20 @@
       "tag": "kontak_admin",
       "patterns": ["kontak admin psti","hubungi lab psti","nomor admin psti","siapa yang bisa dihubungi"],
       "responses": ["Untuk informasi lebih lanjut, kamu bisa menghubungi pengelola Lab PSTI secara langsung di kampus.","Silakan hubungi admin atau dosen pengelola Lab PSTI di kampus."]
+    },
+    {
+      "tag": "about_Skill",
+      "patterns": [
+        "Skill apa saja di lab",
+        "Skill apa aja yang dikembangkan di lab",
+        "Mahasiswa belajar skill apa",
+        "Lab PSTI mendukung skill apa saja",
+        "Apa kemampuan yang dikembangkan di lab"
+      ],
+      "responses": [
+        "Lab PSTI mendukung pengembangan skill IoT, CyberSecurity, Web, dan Embedded System."
+      ]
     }
+    
   ]
 }

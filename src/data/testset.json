@@ -1,0 +1,50 @@
+[
+    { "text": "pagi kak", "intent": "greeting" },
+    { "text": "halo min", "intent": "greeting" },
+    { "text": "assalamu alaikum kak", "intent": "greeting" },
+    { "text": "hai chatbot", "intent": "greeting" },
+    { "text": "selamat malam kak", "intent": "greeting" },
+  
+    { "text": "makasih banyak ya", "intent": "goodbye" },
+    { "text": "oke terima kasih infonya", "intent": "goodbye" },
+    { "text": "sip thanks ya", "intent": "goodbye" },
+    { "text": "udah cukup kak", "intent": "goodbye" },
+    { "text": "sampai ketemu lagi", "intent": "goodbye" },
+  
+    { "text": "sebenarnya psti itu tempat apa sih?", "intent": "tentang_psti" },
+    { "text": "di psti ngapain aja biasanya?", "intent": "tentang_psti" },
+    { "text": "fungsi utama lab psti buat apa?", "intent": "tentang_psti" },
+    { "text": "psti itu lab riset ya?", "intent": "tentang_psti" },
+    { "text": "kegiatan di psti apa saja?", "intent": "tentang_psti" },
+  
+    { "text": "lab nya ada komputer berapa?", "intent": "fasilitas_lab" },
+    { "text": "alat riset di lab apa aja ya?", "intent": "fasilitas_lab" },
+    { "text": "di lab tersedia perangkat apa?", "intent": "fasilitas_lab" },
+    { "text": "lab psti lengkap gak fasilitasnya?", "intent": "fasilitas_lab" },
+    { "text": "apa saja yang bisa dipakai di lab?", "intent": "fasilitas_lab" },
+  
+    { "text": "lab buka dari jam berapa sampai jam berapa?", "intent": "jam_operasional" },
+    { "text": "kalau mau ke lab jam berapa enaknya?", "intent": "jam_operasional" },
+    { "text": "lab masih buka sore gak?", "intent": "jam_operasional" },
+    { "text": "hari apa aja lab buka?", "intent": "jam_operasional" },
+    { "text": "jam kerja lab gimana ya?", "intent": "jam_operasional" },
+  
+    { "text": "kalau mau pakai lab harus gimana?", "intent": "cara_reservasi" },
+    { "text": "prosedur pinjam lab gimana?", "intent": "cara_reservasi" },
+    { "text": "izin pakai lab ke siapa?", "intent": "cara_reservasi" },
+    { "text": "lab bisa dipakai bebas gak?", "intent": "cara_reservasi" },
+    { "text": "mau reservasi ruangan lab caranya?", "intent": "cara_reservasi" },
+  
+    { "text": "di lab boleh makan gak?", "intent": "aturan_lab" },
+    { "text": "larangan di lab apa saja?", "intent": "aturan_lab" },
+    { "text": "tata tertib kalau di lab gimana?", "intent": "aturan_lab" },
+    { "text": "apa aja yang gak boleh dilakukan di lab?", "intent": "aturan_lab" },
+    { "text": "aturan penggunaan lab gimana?", "intent": "aturan_lab" },
+  
+    { "text": "contoh karya dari psti apa aja?", "intent": "tentang_project" },
+    { "text": "psti pernah bikin project apa?", "intent": "tentang_project" },
+    { "text": "hasil inovasi dari lab apa saja?", "intent": "tentang_project" },
+    { "text": "project iot di psti apa aja?", "intent": "tentang_project" },
+    { "text": "bisa kasih daftar project psti?", "intent": "tentang_project" }
+  ]
+  

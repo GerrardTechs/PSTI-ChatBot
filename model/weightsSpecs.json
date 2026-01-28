@@ -2,7 +2,7 @@
   {
     "name": "dense_Dense1/kernel",
     "shape": [
-      108,
+      128,
       128
     ],
     "dtype": "float32"
@@ -18,27 +18,12 @@
     "name": "dense_Dense2/kernel",
     "shape": [
       128,
-      64
-    ],
-    "dtype": "float32"
-  },
-  {
-    "name": "dense_Dense2/bias",
-    "shape": [
-      64
-    ],
-    "dtype": "float32"
-  },
-  {
-    "name": "dense_Dense3/kernel",
-    "shape": [
-      64,
       16
     ],
     "dtype": "float32"
   },
   {
-    "name": "dense_Dense3/bias",
+    "name": "dense_Dense2/bias",
     "shape": [
       16
     ],
