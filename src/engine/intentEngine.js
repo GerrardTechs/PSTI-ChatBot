@@ -3,35 +3,47 @@ const fs = require('fs');
 const path = require('path');
 const { preprocess } = require('../nlp/preprocess');
 
-const vocab = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '../../model/vocab.json'))
-);
-
-const labels = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '../../model/labels.json'))
-);
-
 let model;
+let vocab = [];
+let labels = [];
 
-// ===== Load model sekali saat server start =====
+// ⛔ PASTIKAN PATH KE /model (bukan src/engine/model)
+const MODEL_DIR = path.join(__dirname, '../../model');
+
 async function loadModel() {
-    const modelJson = JSON.parse(
-      fs.readFileSync('./model/model.json', 'utf8')
-    );
-  
-    const weightData = fs.readFileSync('./model/weights.bin');
-  
-    const handler = tf.io.fromMemory(
-      modelJson,
-      weightData.buffer
-    );
-  
-    model = await tf.loadLayersModel(handler);
-    console.log('✅ ML Intent Model Loaded (memory)');
-  }
-  
+  console.log('📦 Loading ML model...');
 
-// ===== BoW =====
+  const modelJson = JSON.parse(
+    fs.readFileSync(path.join(MODEL_DIR, 'model.json'))
+  );
+
+  const weightSpecs = JSON.parse(
+    fs.readFileSync(path.join(MODEL_DIR, 'weightsSpecs.json'))
+  );
+
+  const weightData = fs.readFileSync(
+    path.join(MODEL_DIR, 'weights.bin')
+  );
+
+  vocab = JSON.parse(
+    fs.readFileSync(path.join(MODEL_DIR, 'vocab.json'))
+  );
+
+  labels = JSON.parse(
+    fs.readFileSync(path.join(MODEL_DIR, 'labels.json'))
+  );
+
+  model = await tf.loadLayersModel(
+    tf.io.fromMemory({
+      modelTopology: modelJson,
+      weightSpecs,
+      weightData
+    })
+  );
+
+  console.log('✅ Model, vocab, labels loaded from /model');
+}
+
 function textToBow(text) {
   const words = preprocess(text).split(' ');
   const vec = new Array(vocab.length).fill(0);
@@ -44,26 +56,19 @@ function textToBow(text) {
   return vec;
 }
 
-// ===== Predict =====
 function predictIntent(text) {
   const bow = textToBow(text);
   const input = tf.tensor2d([bow]);
+  const prediction = model.predict(input);
+  const data = prediction.dataSync();
 
-  const pred = model.predict(input);
-  const scores = pred.dataSync();
-
-  input.dispose();
-  pred.dispose();
-
-  const maxIdx = scores.indexOf(Math.max(...scores));
+  let maxVal = Math.max(...data);
+  let maxIdx = data.indexOf(maxVal);
 
   return {
     tag: labels[maxIdx],
-    confidence: scores[maxIdx]
+    confidence: maxVal
   };
 }
 
-module.exports = {
-  predictIntent,
-  loadModel
-};
+module.exports = { loadModel, predictIntent };

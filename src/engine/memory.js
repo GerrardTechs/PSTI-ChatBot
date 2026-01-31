@@ -4,8 +4,7 @@ function getSession(userId) {
   if (!sessions[userId]) {
     sessions[userId] = {
       lastIntent: null,
-      lastEntity: null,
-      context: null
+      lastResponseIndex: 0
     };
   }
   return sessions[userId];

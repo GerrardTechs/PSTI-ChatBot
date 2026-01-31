@@ -8,7 +8,7 @@
     { "text": "makasih banyak ya", "intent": "goodbye" },
     { "text": "oke terima kasih infonya", "intent": "goodbye" },
     { "text": "sip thanks ya", "intent": "goodbye" },
-    { "text": "udah cukup kak", "intent": "goodbye" },
+    { "text": "udah cukup", "intent": "goodbye" },
     { "text": "sampai ketemu lagi", "intent": "goodbye" },
   
     { "text": "sebenarnya psti itu tempat apa sih?", "intent": "tentang_psti" },

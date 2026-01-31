@@ -1,19 +1,27 @@
-// train_ml.js
 const tf = require('@tensorflow/tfjs');
 const fs = require('fs');
 const { preprocess } = require('./src/nlp/preprocess');
 
-const intents = JSON.parse(
+const intentsData = JSON.parse(
   fs.readFileSync('./src/data/intents.json')
-).intents;
-
-const vocab = JSON.parse(
-  fs.readFileSync('./model/vocab.json')
 );
 
-if (!fs.existsSync('./model')) {
-  fs.mkdirSync('./model');
-}
+const intents = intentsData.intents;
+
+// ===== BUILD VOCAB OTOMATIS =====
+let vocabSet = new Set();
+
+intents.forEach(intent => {
+  intent.patterns.forEach(p => {
+    const words = preprocess(p).split(' ');
+    words.forEach(w => vocabSet.add(w));
+  });
+});
+
+const vocab = Array.from(vocabSet);
+fs.writeFileSync('./model/vocab.json', JSON.stringify(vocab, null, 2));
+
+console.log('✅ Vocab dibuat dari intents:', vocab.length);
 
 // ===== Helper BoW =====
 function textToBow(text) {
@@ -68,45 +76,25 @@ model.compile({
 (async () => {
   console.log('🚀 Training ML Intent Classifier...');
   await model.fit(xsTensor, ysTensor, {
-    epochs: 400,
+    epochs: 500,
     shuffle: true,
     verbose: 1
   });
 
-  // ===== SAVE MANUAL (NO TFJS-NODE) =====
-const saveHandler = {
+  const saveHandler = {
     save: async (artifacts) => {
-      fs.writeFileSync(
-        './model/model.json',
-        JSON.stringify(artifacts.modelTopology, null, 2)
-      );
-  
-      fs.writeFileSync(
-        './model/weights.bin',
-        Buffer.from(artifacts.weightData)
-      );
-  
-      fs.writeFileSync(
-        './model/weightsSpecs.json',
-        JSON.stringify(artifacts.weightSpecs, null, 2)
-      );
-  
-      return {
-        modelArtifactsInfo: {
-          dateSaved: new Date(),
-          modelTopologyType: 'JSON',
-          weightDataBytes: artifacts.weightData.byteLength
-        }
-      };
+      fs.writeFileSync('./model/model.json',
+        JSON.stringify(artifacts.modelTopology));
+      fs.writeFileSync('./model/weights.bin',
+        Buffer.from(artifacts.weightData));
+      fs.writeFileSync('./model/weightsSpecs.json',
+        JSON.stringify(artifacts.weightSpecs));
+      return { modelArtifactsInfo: {} };
     }
   };
-  
+
   await model.save(saveHandler);
-  
-  // simpan labels
   fs.writeFileSync('./model/labels.json', JSON.stringify(labels));
-  
-  console.log('✅ ML Model saved WITHOUT tfjs-node');
-  
-  console.log('✅ ML Model saved to /model');
+
+  console.log('✅ MODEL + VOCAB + LABELS SINKRON TOTAL');
 })();
