@@ -89,7 +89,13 @@
         "psti tempat apa?psti di ubl itu apa?",
         "pengen tau soal psti",
         "jelasin psti dong",
-        "psti buat mahasiswa apa?"
+        "psti buat mahasiswa apa?",
+        "tentang lab psti",
+        "tentang psti",
+        "info lab psti",
+        "info psti",
+        "ceritain tentang psti",
+        "jelasin psti"
       ],
       "responses": [
         "Lab PSTI (atau lengkapnya Pusat Studi Teknologii Informasi) adalah lab dimana mahasiswa dengan beasiswa reka inovasi dapat belajar dan mengembangkan skill mereka seputar teknologi informasi! Bersama dengan 3 Kakak-kakak keren \"Ari Mardiansyah\", \"Syarif Hidayatulloh\", dan \"Aldi Prasetyo\", kakak-kakak ini bertanggung jawab atas segala kegiatan yang berlangsung di dalam Lab! Adakah yang ingin kamu tanyakan lebih lanjut? 😊 Misalnya \"Kenapa Anak Reka Inovasi bergabung di Lab PSTI?\" atau \"Gimana caranya bisa dapet beasiswa Reka Inovasi?\"",
@@ -251,7 +257,7 @@
         "minggu buka ga?"
       ],
       "responses": [
-        "Senin–Jumat buka jam 08.00–17.00 WIB.😊",
+        "Senin–Jumat buka jam 08.00–16.00 WIB.😊",
         "Hari Sabtu, Minggu dan libur nasional lab tutup ya, Kalau mau datang, pastiin masih di jam operasional 👍"
       ]
     },

@@ -158,19 +158,21 @@ function createKnowledgeEngine(knowledge) {
         context.lastMentionedStudent = mentionedStudent;
         return generateStudentProfile(mentionedStudent);
       } else {
-        // Check if question is about a person (nama tidak ditemukan)
-        // Exclude generic questions like "siapa saja", "siapa aja"
+        // Check if question is about a specific person (nama tidak ditemukan)
+        // Exclude generic questions and very short queries
         if (!msg.includes('aja') && !msg.includes('saja') && 
             !msg.includes('anggota') && !msg.includes('mahasiswa') &&
             !msg.includes('pembina') && !msg.includes('developer') &&
-            !msg.includes('perancang') && !msg.includes('pembuat')) {
+            !msg.includes('perancang') && !msg.includes('pembuat') &&
+            msg.trim() !== 'siapa' && msg.trim() !== 'siapa?') {
           
           // Extract potential name from question
           const words = msg.split(' ').filter(w => 
-            w.length > 2 && !['siapa', 'yang', 'itu', 'dia', 'nama'].includes(w)
+            w.length > 2 && !['siapa', 'yang', 'itu', 'dia', 'nama', 'kah'].includes(w)
           );
           
-          if (words.length > 0) {
+          // Only show "not found" if there's a meaningful word (potential name)
+          if (words.length > 0 && words.length < 5) {
             return `Maaf, saya tidak menemukan data tentang "${words[0]}" di database mahasiswa Lab PSTI. Mungkin yang Anda maksud adalah salah satu dari mahasiswa Reka Inovasi? Ketik "mahasiswa reka 24" atau "mahasiswa reka 25" untuk melihat daftar lengkapnya.`;
           }
         }
@@ -188,10 +190,15 @@ function createKnowledgeEngine(knowledge) {
     // =========================
     
     const mentionedProject = findProjectByName(msg);
-    if (mentionedProject && (msg.includes('apa') || msg.includes('tentang') || msg.includes('info'))) {
-      // Set NEW context
-      context.lastMentionedProject = mentionedProject;
-      return generateProjectInfo(mentionedProject);
+    if (mentionedProject) {
+      // If asking about project info OR just mentioning project name
+      if (msg.includes('apa') || msg.includes('tentang') || msg.includes('info') || 
+          msg.includes('siapa') || msg.includes('perancang') || msg.includes('developer') ||
+          msg.includes('pembuat') || msg.trim().split(' ').length <= 3) {
+        // Set NEW context
+        context.lastMentionedProject = mentionedProject;
+        return generateProjectInfo(mentionedProject);
+      }
     }
 
     // =========================
@@ -322,6 +329,14 @@ function createKnowledgeEngine(knowledge) {
     // =========================
     // RULE-BASED: LAB INFO
     // =========================
+    
+    // About PSTI/Lab PSTI
+    if ((msg.includes('tentang') && (msg.includes('lab') || msg.includes('psti'))) ||
+        (msg.includes('apa itu') && msg.includes('psti')) ||
+        (msg === 'psti' || msg === 'lab psti')) {
+      return `Lab PSTI (Pusat Studi Teknologi Informasi) adalah laboratorium riset dan inovasi di bidang Teknologi Informasi di UBL. Lab ini menjadi wadah bagi mahasiswa Beasiswa Reka Inovasi untuk belajar dan mengembangkan skill mereka.\n\nBersama dengan 3 pembina keren: Ari Mardiansyah, Syarif Hidayatulloh, dan Aldi Prasetyo, lab ini fokus pada IoT, AI, Web System, Digital Twin, dan Big Data.\n\nAda yang ingin kamu tanyakan lebih lanjut? 😊`;
+    }
+    
     if (msg.includes('fasilitas') && msg.includes('lab')) {
       if (info_lab.fasilitas && info_lab.fasilitas.length > 0) {
         return `Fasilitas Lab PSTI:\n${info_lab.fasilitas.map(f => `• ${f}`).join('\n')}`;
