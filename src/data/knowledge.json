@@ -3,73 +3,119 @@
     "2024": [
       {
         "nama": "Muhammad Ilham Alparsy",
-        "nim": "28--",
+        "nim": "28421014",
         "role": "Koordinator proyek dan kegiatan Lab PSTI",
-        "skills": ["Riset teknologi", "Koordinasi proyek"],
-        "deskripsi": "Bersemangat menjelajah teknologi dengan riset yang cekatan dan pengalaman luas."
+        "skills": ["Riset teknologi", "Koordinasi proyek", "Leadership"],
+        "deskripsi": "Bersemangat menjelajah teknologi dengan riset yang cekatan dan pengalaman luas. Perannya sebagai ketua koordinator semua projek serta kegiatan membuat gear di dalam Lab PSTI seperti mendapat pelumas untuk bisa berjalan laju!",
+        "projects": []
       },
       {
         "nama": "Muhammad Fakhsi Albukhori",
-        "nim": "28--",
+        "nim": "28421018",
         "role": "Elektronika & perakitan",
-        "skills": ["Perakitan elektronika", "Hardware"],
-        "deskripsi": "Handal di bidang perakitan dan penanganan komponen elektronika."
+        "skills": ["Perakitan elektronika", "Hardware", "IoT"],
+        "deskripsi": "Handal di bidang perakitan dan penanganan komponen elektronika.",
+        "projects": []
       },
       {
         "nama": "Ramadhan Triansyah",
-        "nim": "28--",
+        "nim": "28421013",
         "role": "Teknik perakitan",
-        "skills": ["Perakitan perangkat", "Hardware"],
-        "deskripsi": "Memiliki keahlian teknik merakit yang sangat baik."
+        "skills": ["Perakitan perangkat", "Hardware", "IoT"],
+        "deskripsi": "Memiliki keahlian teknik merakit yang sangat baik.",
+        "projects": []
       },
       {
         "nama": "Alessandro Farrel Gerrard Wijaya",
         "nim": "28421014",
+        "panggilan": "Farrel",
         "role": "CyberSecurity Researcher",
-        "skills": ["CyberSecurity", "Eksplorasi sistem"],
-        "deskripsi": "Fokus mendalami dunia keamanan sistem dan eksplorasi teknologi baru."
+        "skills": ["CyberSecurity", "Eksplorasi sistem", "Network Security"],
+        "deskripsi": "Fokus mendalami dunia keamanan sistem dan eksplorasi teknologi baru. Bersemangat mendalami dunia CyberSecurity serta gemar mengeksplor hal-hal baru!",
+        "projects": []
       },
       {
         "nama": "Gabriel Valentino Cuaca",
-        "nim": "28--",
+        "nim": "28411001",
+        "panggilan": "Gabriel",
         "role": "IoT Engineer",
-        "skills": ["IoT", "Embedded System"],
-        "deskripsi": "Aktif sebagai IoT Engineer dengan pengalaman kuat di bidang IoT."
+        "skills": ["IoT", "Embedded System", "Arduino", "ESP32"],
+        "deskripsi": "Aktif sebagai IoT Engineer dengan pengalaman kuat di bidang IoT. Pengalaman yang ga boleh di remehin!",
+        "projects": []
       },
       {
         "nama": "Gery Wijaya",
-        "nim": "2841--",
+        "nim": "28411003",
+        "panggilan": "Gery",
         "role": "IoT Developer",
-        "skills": ["IoT", "System Development"],
-        "deskripsi": "Tertarik pada pengembangan sistem berbasis Internet of Things."
+        "skills": ["IoT", "System Development", "Embedded System"],
+        "deskripsi": "Tertarik pada pengembangan sistem berbasis Internet of Things. Mahasiswa sosialis yang kalau digabung dengan Gabriel, mereka menjadi duo yang tak tertandingi!",
+        "projects": []
       },
       {
         "nama": "Tiara Angel",
         "nim": "2841007",
         "panggilan": "Cira",
         "role": "Web Architect",
-        "skills": ["Web Architecture", "Frontend", "Backend"],
-        "deskripsi": "Bersemangat merancang arsitektur website agar berjalan optimal."
+        "skills": ["Web Architecture", "Frontend", "Backend", "Full Stack"],
+        "deskripsi": "Bersemangat merancang arsitektur website agar berjalan optimal. Bersemangat dalam merancang arsitektur website sehingga berjalan lancar tanpa kendala!",
+        "projects": []
       }
     ],
     "2025": [
       {
         "nama": "Muhammad Farel Fainaki",
-        "skills": ["{skill_3}"],
-        "karakter": "{karakter_3}",
-        "deskripsi": "Berfokus mengerjakan proyek di lab dengan karakter yang kuat."
+        "nim": "TBA",
+        "panggilan": "Farel",
+        "role": "IoT & 3D Modeling Developer",
+        "skills": ["IoT", "3D Modeling", "Blender"],
+        "deskripsi": "Mahasiswa yang berfokus pada pengembangan IoT dan 3D Modeling, dengan karakter yang pekerja keras dalam mengerjakan proyek-proyek di lab.",
+        "projects": []
       },
       {
         "nama": "Damar Aryo Saputra",
-        "skills": ["{skill_4}"],
-        "role": "{peran_4}",
-        "deskripsi": "Berperan aktif mendukung kegiatan Lab PSTI."
+        "nim": "TBA",
+        "panggilan": "Damar",
+        "role": "3D Modeling Specialist",
+        "skills": ["3D Modeling", "Blender", "Digital Twin"],
+        "deskripsi": "Dikenal sebagai mahasiswa dengan ketertarikan pada 3D Modeling serta berperan dalam pembuatan 3D modeling sekolah SMK 8 untuk mendukung kegiatan Lab PSTI.",
+        "projects": ["Digital Twin SMK 8"]
+      },
+      {
+        "nama": "Muhammad Alvin Fahreza",
+        "nim": "TBA",
+        "panggilan": "Alvin",
+        "role": "IoT Engineer",
+        "skills": ["IoT", "Embedded System", "Hardware"],
+        "deskripsi": "Mahasiswa yang memiliki minat di bidang IoT, serta berperan dalam pembuatan Proyek SiApik sebagai IoT engineer.",
+        "projects": ["SiApik"]
+      },
+      {
+        "nama": "Muhammad Fathurahman Muiz",
+        "nim": "TBA",
+        "panggilan": "Fathur",
+        "role": "IoT Engineer",
+        "skills": ["IoT", "Embedded System", "Sensor Technology"],
+        "deskripsi": "Mahasiswa yang memiliki minat yang sama seperti Alvin di bidang IoT. Fathur juga berperan dalam pembuatan alat Smart Springkler sebagai IoT Engineer.",
+        "projects": ["Smart Springkler"]
+      },
+      {
+        "nama": "Naufal Said Arrasikh",
+        "nim": "TBA",
+        "panggilan": "Nopal",
+        "role": "IoT Developer",
+        "skills": ["IoT", "Penerapan IoT", "System Integration"],
+        "deskripsi": "Mahasiswa yang hebat dengan ketertarikan terhadap penerapan IoT. Nopal aktif berkontribusi dalam pengembangan sistem berbasis IoT di Lab PSTI.",
+        "projects": []
       },
       {
         "nama": "Achmad Luth Fallah",
-        "skills": ["{skill_6}"],
-        "kontribusi": "{kontribusi_6}",
-        "deskripsi": "Berperan dalam berbagai aktivitas pendukung di Lab PSTI."
+        "nim": "TBA",
+        "panggilan": "Luth",
+        "role": "3D Modeling & Web Developer",
+        "skills": ["3D Modeling", "Website Development", "Full Stack"],
+        "deskripsi": "Mahasiswa yang memiliki minat di bidang 3D Modeling dan Website development. Berkontribusi dalam Pembuatan 3D Modeling SMK 8 dan Website Perpustakaan Digital, sehingga membantu jalannya berbagai aktivitas di Lab PSTI.",
+        "projects": ["Digital Twin SMK 8", "Website Perpustakaan Digital"]
       }
     ]
   },
@@ -77,47 +123,176 @@
     {
       "nama": "Scan-Go",
       "kategori": "Web System",
-      "deskripsi": "Aplikasi absensi sekolah real-time"
+      "deskripsi": "Aplikasi absensi sekolah real-time berbasis web untuk memudahkan pengelolaan kehadiran siswa",
+      "status": "Completed",
+      "developers": [],
+      "teknologi": ["Web", "Real-time System", "Database"]
     },
     {
       "nama": "Apik",
       "kategori": "IoT",
-      "deskripsi": "Pendeteksi dini kebakaran berbasis IoT"
+      "deskripsi": "Pendeteksi dini kebakaran berbasis IoT dengan sensor asap dan suhu untuk keamanan rumah",
+      "status": "Completed",
+      "developers": [],
+      "teknologi": ["IoT", "Sensor", "Arduino", "ESP32"]
+    },
+    {
+      "nama": "SiApik",
+      "kategori": "IoT",
+      "deskripsi": "Sistem pendeteksi dini kebakaran berbasis IoT dengan sensor asap dan suhu untuk keamanan rumah (versi improved)",
+      "status": "Completed",
+      "developers": ["Muhammad Alvin Fahreza"],
+      "teknologi": ["IoT", "Sensor", "Arduino", "ESP32", "Firebase"]
     },
     {
       "nama": "Embungin Smart",
       "kategori": "IoT",
-      "deskripsi": "Kontrol suhu greenhouse otomatis"
+      "deskripsi": "Sistem kontrol suhu greenhouse otomatis untuk optimalisasi pertumbuhan tanaman",
+      "status": "Completed",
+      "developers": [],
+      "teknologi": ["IoT", "Sensor Suhu", "Actuator", "Arduino"]
     },
     {
       "nama": "Aqua Secure",
       "kategori": "IoT",
-      "deskripsi": "Kontrol keran air otomatis hemat air"
+      "deskripsi": "Sistem kontrol keran air otomatis hemat air menggunakan sensor untuk efisiensi penggunaan air",
+      "status": "Completed",
+      "developers": [],
+      "teknologi": ["IoT", "Sensor Air", "Solenoid Valve", "ESP32"]
     },
     {
       "nama": "Promet",
       "kategori": "IoT",
-      "deskripsi": "Sistem pendeteksi kebakaran berbasis IoT"
+      "deskripsi": "Sistem pendeteksi kebakaran berbasis IoT dengan monitoring real-time dan notifikasi otomatis",
+      "status": "Completed",
+      "developers": [],
+      "teknologi": ["IoT", "Sensor", "Monitoring System", "Notification"]
     },
     {
       "nama": "Digital Twin Lab PSTI",
       "kategori": "Digital Twin",
-      "deskripsi": "Visualisasi 3D Lab PSTI di Roblox"
+      "deskripsi": "Visualisasi 3D Lab PSTI di platform Roblox untuk simulasi dan virtual tour laboratorium",
+      "status": "Completed",
+      "developers": [],
+      "teknologi": ["Roblox Studio", "3D Modeling", "Virtual Reality"]
+    },
+    {
+      "nama": "Digital Twin SMK 8",
+      "kategori": "Digital Twin",
+      "deskripsi": "Visualisasi 3D sekolah SMK 8 di platform Roblox untuk virtual tour dan simulasi",
+      "status": "Completed",
+      "developers": ["Damar Aryo Saputra", "Achmad Luth Fallah"],
+      "teknologi": ["Roblox Studio", "3D Modeling", "Blender"]
     },
     {
       "nama": "Smart Watering TNWK",
       "kategori": "IoT",
-      "deskripsi": "Sistem penyiraman otomatis"
+      "deskripsi": "Sistem penyiraman tanaman otomatis berbasis sensor kelembaban tanah untuk efisiensi air",
+      "status": "Completed",
+      "developers": [],
+      "teknologi": ["IoT", "Sensor Kelembaban", "Arduino", "Relay"]
+    },
+    {
+      "nama": "Smart Springkler",
+      "kategori": "IoT",
+      "deskripsi": "Sistem penyiraman otomatis menggunakan springkler dengan kontrol berbasis IoT",
+      "status": "Completed",
+      "developers": ["Muhammad Fathurahman Muiz"],
+      "teknologi": ["IoT", "Sensor", "ESP32", "Relay", "Water Pump"]
     },
     {
       "nama": "Smart Parking Monitoring",
       "kategori": "IoT",
-      "deskripsi": "Monitoring parkir berbasis IoT"
+      "deskripsi": "Sistem monitoring parkir berbasis IoT dengan sensor untuk deteksi ketersediaan tempat parkir",
+      "status": "Completed",
+      "developers": [],
+      "teknologi": ["IoT", "Sensor Ultrasonik", "ESP32", "Web Dashboard"]
     },
     {
       "nama": "Digital Twin SMP-SMA Bodhisattva",
       "kategori": "Digital Twin",
-      "deskripsi": "Visualisasi sekolah di Roblox"
+      "deskripsi": "Visualisasi 3D sekolah SMP-SMA Bodhisattva di platform Roblox untuk virtual tour",
+      "status": "Completed",
+      "developers": [],
+      "teknologi": ["Roblox Studio", "3D Modeling", "Virtual Reality"]
+    },
+    {
+      "nama": "Website Perpustakaan Digital",
+      "kategori": "Web System",
+      "deskripsi": "Platform perpustakaan digital untuk pengelolaan dan akses buku secara online",
+      "status": "Completed",
+      "developers": ["Achmad Luth Fallah"],
+      "teknologi": ["Web", "Database", "Frontend", "Backend"]
+    },
+    {
+      "nama": "Chatbot PSTI",
+      "kategori": "AI & Web System",
+      "deskripsi": "Chatbot berbasis AI untuk menjawab pertanyaan seputar Lab PSTI, beasiswa, dan kegiatan mahasiswa",
+      "status": "On Progress",
+      "developers": [],
+      "teknologi": ["AI", "NLP", "Machine Learning", "Web", "Node.js"]
+    },
+    {
+      "nama": "PSTI Landing Page",
+      "kategori": "Web System",
+      "deskripsi": "Website landing page untuk informasi dan showcase Lab PSTI",
+      "status": "On Progress",
+      "developers": [],
+      "teknologi": ["Web", "Frontend", "UI/UX Design"]
     }
-  ]
+  ],
+  "pembina_lab": [
+    {
+      "nama": "Ari Mardiansyah",
+      "role": "Pembina Lab PSTI",
+      "deskripsi": "Salah satu dari 3 pembina yang bertanggung jawab atas segala kegiatan di Lab PSTI"
+    },
+    {
+      "nama": "Syarif Hidayatulloh",
+      "role": "Pembina Lab PSTI",
+      "deskripsi": "Salah satu dari 3 pembina yang bertanggung jawab atas segala kegiatan di Lab PSTI"
+    },
+    {
+      "nama": "Aldi Prasetyo",
+      "role": "Pembina Lab PSTI",
+      "deskripsi": "Salah satu dari 3 pembina yang bertanggung jawab atas segala kegiatan di Lab PSTI"
+    }
+  ],
+  "ketua_prodi": {
+    "nama": "Dr. Marzuki, S.Kom., M.Kom.",
+    "jabatan": "Ketua Program Studi PSTI",
+    "deskripsi": "Bertanggung jawab atas arah dan pengembangan Program Studi PSTI"
+  },
+  "info_lab": {
+    "nama_lengkap": "Pusat Studi Teknologi Informasi",
+    "singkatan": "PSTI",
+    "lokasi": "Gedung C Lantai 3, Universitas Bandar Lampung, Lampung, Indonesia",
+    "kontak": {
+      "email": "pstilab@ubl.ac.id",
+      "telepon": "(0721) 123456"
+    },
+    "jam_operasional": {
+      "senin_jumat": "08:00-17:00",
+      "sabtu": "08:00-14:00",
+      "minggu": "Tutup"
+    },
+    "fasilitas": [
+      "40 unit PC untuk akademik",
+      "2 unit TV untuk materi",
+      "Perangkat IoT (Arduino, ESP32, Sensor)",
+      "VR/AR Equipment",
+      "3D Printer",
+      "Alat solder dan perlengkapan elektronik",
+      "Ruang riset dan diskusi"
+    ],
+    "fokus_riset": [
+      "Smart System",
+      "Digital Twin",
+      "Big Data",
+      "Artificial Intelligence",
+      "Software Development",
+      "Internet of Things (IoT)",
+      "CyberSecurity"
+    ]
+  }
 }

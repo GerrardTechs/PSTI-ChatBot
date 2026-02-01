@@ -6,195 +6,253 @@
       "patterns": [
         "halo",
         "hai",
-        "hi",
-        "hello",
-        "permisi",
-        "assalamualaikum",
         "selamat pagi",
         "selamat siang",
-        "selamat sore",
-        "selamat malam"
+        "selamat malam",
+        "permisi",
+        "assalamualaikum",
+        "hi",
+        "hello"
       ],
       "responses": [
-        "Halo! Selamat datang di Chatbot PSTI UBL 👋",
-        "Hai! Ada yang bisa dibantu seputar Lab dan Project PSTI?",
-        "Hello! Mau tanya apa tentang PSTI hari ini?"
+        "Halo! Selamat datang di Chatbot Beasiswa Reka Inovasi PSTI UBL",
+        "Hai, ada yang bisa dibantu tentang beasiswa PSTI?",
+        "Selamat datang! Mau tanya apa tentang Reka Inovasi?"
       ]
     },
     {
       "tag": "goodbye",
       "patterns": [
         "dadah",
+        "dadah chat",
+        "goodbye chat",
+        "bye chat!",
         "bye",
-        "terima kasih",
+        "sampai jumpa",
+        "sampai jumpa chat!",
+        "dadah chatbot"
+      ],
+      "responses": [
+        "Sampai jumpa! Semoga sukses dapat Beasiswa Reka Inovasi!",
+        "Terima kasih, silakan daftar ya!",
+        "Semangat project inovatifnya! Sukses selalu!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
         "makasih",
-        "thanks",
+        "thankyouu",
+        "thankyou yaa",
+        "makasih banyak",
+        "terima kasih",
+        "tengkyu",
+        "kamsia",
+        "kamsia ya",
+        "tengkyu ya",
+        "terima kasih banyak chattt!!",
+        "terima kasih banyak!!",
+        "oke makasih",
         "ok makasih",
-        "sampai jumpa"
+        "okay makasih",
+        "makasih yah"
       ],
       "responses": [
         "Sama-sama! Saya senang jika anda puas dengan informasi yang saya berikan, apakah ada pertanyaan lagi seputar PSTI? 😊",
-        "Terima kasih sudah bertanya! Kalau butuh info lagi tinggal tanya ya.",
-        "Sampai jumpa lagi!",
-        "Iyaa sama-sama! Apakah ada yang ingin kamu tanyakan lagi seputar PSTI? 😀|Terima kasih kembali! Tanyakan saja apa yang jadi kebingungan mu yaa! 😁",
         "Sama-sama! Saya puas jika anda juga puas dengan informasi yang saya berikan! Silahkan ada pertanyaan lagi? 😊",
+        "Iyaa sama-sama! Apakah ada yang ingin kamu tanyakan lagi seputar PSTI? 😀",
+        "Terima kasih kembali! Tanyakan saja apa yang jadi kebingungan mu yaa! 😁",
         "Sama-samaaa, jangan sungkan untuk bertanya lagi jika masih bingung seputar PSTI yaa 😎"
-
       ]
     },
     {
-      "tag": "tentang_psti",
+      "tag": "about_psti",
       "patterns": [
-        "apa itu psti",
-        "psti",
-        "psti itu apa",
-        "lab psti itu apa",
-        "tentang psti",
-        "lab psti ngapain aja",
-        "fungsi lab psti"
+        "apa itu lab PSTI?",
+        "Lab PSTI itu apa?",
+        "apaan itu lab PSTI?",
+        "PSTI tuh apa?",
+        "PSTI itu apa ya?",
+        "PSTI?",
+        "PSTI kepanjangan nya apa?",
+        "Kepanjangan PSTI?",
+        "apa itu psti?",
+        "psti itu apa sih?",
+        "lab psti tuh apa?",
+        "tentang lab psti dong",
+        "psti kepanjangan apa ya?",
+        "fungsi lab psti",
+        "psti buat ngapain?",
+        "lab psti ubl?",
+        "info singkat psti",
+        "lab psti itu lab apa",
+        "psti tempat apa?psti di ubl itu apa?",
+        "pengen tau soal psti",
+        "jelasin psti dong",
+        "psti buat mahasiswa apa?"
       ],
       "responses": [
-        "Lab PSTI adalah laboratorium riset dan inovasi di bidang Teknologi Informasi di UBL yang fokus pada IoT, AI, Web System, dan Digital Twin.",
-        "Lab PSTI adalah laboratorium pusat riset dan praktikum IT di UBL, mulai dari programming sampai IoT dan AI. Bersama dengan 3 Kakak-kakak keren 'Ari Mardiansyah', 'Syarif Hidayatulloh', dan 'Aldi Prasetyo', kakak-kakak ini bertanggung jawab atas segala kegiatan yang berlangsung di dalam Lab! Adakah yang ingin kamu tanyakan lebih lanjut? 😊 Misalnya 'Kenapa Anak Reka Inovasi bergabung di Lab PSTI?' atau 'Gimana caranya bisa dapet beasiswa Reka Inovasi?'",
-        "Lab PSTI (atau lengkapnya Pusat Studi Teknologii Informasi) adalah lab dimana mahasiswa dengan beasiswa reka inovasi dapat belajar dan mengembangkan skill mereka seputar teknologi informasi! Bersama dengan 3 Kakak-kakak keren 'Ari Mardiansyah', 'Syarif Hidayatulloh', dan 'Aldi Prasetyo', kakak-kakak ini bertanggung jawab atas segala kegiatan yang berlangsung di dalam Lab! Adakah yang ingin kamu tanyakan lebih lanjut? 😊 Misalnya 'Kenapa Anak Reka Inovasi bergabung di Lab PSTI?' atau 'Gimana caranya bisa dapet beasiswa Reka Inovasi?'"
-      ]
-    },
-    {
-      "tag": "fasilitas_lab",
-      "patterns": [
-        "fasilitas lab psti apa saja",
-        "isi lab psti",
-        "alat di lab psti",
-        "lab psti punya apa aja",
-        "perangkat di lab psti",
-        "fasilitas lab ada apa aja?",
-        "di lab psti ada apa aja?",
-        "di dalam lab psti ada apa aja?",
-        "fasilitas lab psti apa aja sih?",
-        "fasilitas lab apa aja?",
-        "ada apa aja di lab psti?",
-        "lab psti isinya apa?"
-      ],
-      "responses": [
-        "Lab PSTI memiliki 40 PC, perangkat IoT, VR/AR, 3D Printer, dan alat pendukung riset lainnya.",
-        "Fasilitas di Lab PSTI mendukung riset IoT, AI, Web Development, dan Digital Twin.",
-        "Laboratorium PSTI dilengkapi berbagai fasilitas penunjang pembelajaran dan praktikum, antara lain 2 unit PC untuk akademik, 2 unit TV untuk materi, serta berbagai peralatan praktikum seperti alat solder dan perlengkapan elektronik lainnya."
-      ]
-    },
-    {
-      "tag": "jam_operasional",
-      "patterns": [
-        "lab psti buka jam berapa",
-        "jam operasional lab psti",
-        "kapan lab psti buka",
-        "lab psti tutup jam berapa"
-      ],
-      "responses": [
-        "Lab PSTI buka Senin–Jumat pukul 08.00–17.00.",
-        "Jam operasional Lab PSTI adalah hari kerja dari pagi sampai sore."
-      ]
-    },
-    {
-      "tag": "cara_reservasi",
-      "patterns": [
-        "cara reservasi lab",
-        "gimana cara booking lab",
-        "bisa booking lab ga",
-        "mau pakai lab gimana",
-        "daftar pakai lab"
-      ],
-      "responses": [
-        "Untuk menggunakan Lab PSTI, kamu bisa melakukan reservasi melalui admin atau dosen pembimbing terlebih dahulu.",
-        "Reservasi lab dilakukan dengan izin dosen atau pengelola Lab PSTI."
-      ]
-    },
-    {
-      "tag": "aturan_lab",
-      "patterns": [
-        "aturan di lab psti",
-        "tata tertib lab psti",
-        "peraturan lab psti",
-        "apa boleh di lab psti",
-        "apa yang tidak boleh di lab",
-        "kira-kira apa aja aturan lab?",
-        "apa aja aturan lab?",
-        "di dalam lab psti ada aturan apa?"
-      ],
-      "responses": [
-        "Di Lab PSTI tidak diperbolehkan makan, minum, dan harus menjaga kebersihan serta peralatan.",
-        "Gunakan fasilitas lab dengan bijak dan sesuai arahan pengelola.",
-        "Mahasiswa Beasiswa Reka Inovasi wajib mengikuti kegiatan di Pusat Studi/Lab minimal 20 jam/minggu, diluar jam kuliah, menyampaikan laporan perkembangan tiap semester, dan memiliki IPK minimal 3,00. Perpanjangan beasiswa mempertimbangkan keaktifan, soft skill, dan hard skill, serta ditetapkan oleh Surat Keputusan Rektor maksimal 8 semester."
-      ]
-    },
-    {
-      "tag": "tentang_project",
-      "patterns": [
-        "project psti apa saja",
-        "contoh project psti",
-        "hasil karya psti",
-        "project inovasi psti",
-        "daftar project psti",
-        "karya lab psti apa aja"
-      ],
-      "responses": [
-        "Berikut beberapa project unggulan PSTI UBL 🚀\n🔹 Scan-Go: Aplikasi absensi sekolah real-time.\n🔹 Apik: Pendeteksi dini kebakaran berbasis IoT.\n🔹 Embunin Smart: Kontrol suhu greenhouse otomatis.\n🔹 Aqua Secure: Kontrol keran air otomatis hemat air.\n🔹 Promet: Sistem pendeteksi kebakaran berbasis IoT.\n🔹 Digital Twin Lab PSTI (Roblox): Visualisasi 3D Lab PSTI.\n🔹 Smart Watering TNWK: Sistem penyiraman otomatis.\n🔹 Smart Parking Monitoring: Monitoring parkir berbasis IoT.\n🔹 Digital Twin SMP-SMA Bodhisattva: Visualisasi sekolah di Roblox.\nOn Progress: Chatbot PSTI & PSTI Landing Page"
+        "Lab PSTI (atau lengkapnya Pusat Studi Teknologii Informasi) adalah lab dimana mahasiswa dengan beasiswa reka inovasi dapat belajar dan mengembangkan skill mereka seputar teknologi informasi! Bersama dengan 3 Kakak-kakak keren \"Ari Mardiansyah\", \"Syarif Hidayatulloh\", dan \"Aldi Prasetyo\", kakak-kakak ini bertanggung jawab atas segala kegiatan yang berlangsung di dalam Lab! Adakah yang ingin kamu tanyakan lebih lanjut? 😊 Misalnya \"Kenapa Anak Reka Inovasi bergabung di Lab PSTI?\" atau \"Gimana caranya bisa dapet beasiswa Reka Inovasi?\"",
+        "Lab PSTI adalah laboratorium pusat riset dan praktikum IT di UBL, mulai dari programming sampai IoT dan AI. Bersama dengan 3 Kakak-kakak keren \"Ari Mardiansyah\", \"Syarif Hidayatulloh\", dan \"Aldi Prasetyo\", kakak-kakak ini bertanggung jawab atas segala kegiatan yang berlangsung di dalam Lab! Adakah yang ingin kamu tanyakan lebih lanjut? 😊 Misalnya \"Kenapa Anak Reka Inovasi bergabung di Lab PSTI?\" atau \"Gimana caranya bisa dapet beasiswa Reka Inovasi?\"",
+        "Lab PSTI (Pusat Studi Teknologi Informasi) merupakan laboratorium di Universitas Bandar Lampung yang menjadi wadah pembelajaran, riset, dan pengembangan skill mahasiswa di bidang teknologi informasi, khususnya bagi penerima Beasiswa Reka Inovasi Nah jadi Program Studi PSTI dipimpin oleh Dr. Marzuki, S.Kom., M.Kom. selaku Ketua PSTI yang bertanggung jawab atas arah dan pengembangan program studi😁😁😁.\""
       ]
     },
     {
       "tag": "about_Reka&PSTI",
       "patterns": [
-        "apa hubungannya psti dengan mahasiswa reka inovasi?",
-        "apa hubungannya anak reka inovasi dengan psti?",
-        "kenapa anak reka inovasi bergabung di psti?",
-        "kenapa di psti isi nya anak reka inovasi semua?"
+        "Apa hubungannya PSTI dengan mahasiswa reka inovasi?",
+        "Apa hubungannya anak reka inovasi dengan PSTI?",
+        "kenapa anak reka inovasi bergabung di PSTI?",
+        "kenapa di PSTI isi nya anak reka inovasi semua?"
       ],
       "responses": [
-        "Mahasiswa & Mahasiswi yang mengambil beasiwa reka inovasi di Universitas Bandar Lampung diharuskan untuk bergabung dengan salah satu pusat studi yang ada di Universitas Bandar Lampung. Mereka yang tergabung di reka inovasi bisa memilih Pusat Studi Teknologi Informasi sebagai wadah untuk meningkatkan kompetensi dan ilmu pengetahuan seputar teknologi seperti Smart System, Digital Twin, Big Data, Artificial Intelligence, Software Development, dan masih banyak lagi.",
+        "Mahasiswa & Mahasiswi yang mengambil beasiwa reka inovasi di Universitas Bandar Lampung diharuskan untuk bergabung dengan salah satu pusat studi yang ada di Universitas Bandar Lampung yang dalam hal ini mereka yang tergabung di reka inovasi bisa memilih Pusat Studi Teknologi Informasi sebagai wadah mereka untuk meningkatkan kompetensi dan ilmu pengetahuan seputar teknologi seperti Smart system, digital twin, big data, Artificial Intelligence, Software Development, dan masih banyak lagi.",
         "Mahasiswa Beasiswa Reka Inovasi UBL wajib tergabung dalam pusat studi sebagai syarat pengembangan kompetensi. Pusat Studi Teknologi Informasi tersedia sebagai wadah bagi kamu yang ingin mendalami Smart System, Digital Twin, Big Data, AI, hingga Software Development. Pastikan kamu memilih pusat studi yang sesuai dengan minat pengembangan ilmumu ya!"
+      ]
+    },
+    {
+      "tag": "about_Skill",
+      "patterns": [
+        "Skill apa aja yang bisa didapet di PSTI?",
+        "Belajar apa aja sih kalo di PSTI?",
+        "skill apa aja yang di asah di Lab PSTI?",
+        "Di lab PSTI bisa belajar apa aja?"
+      ],
+      "responses": [
+        "Di PSTI, mahasiswa akan mendapatkan berbagai skill utama di bidang teknologi informasi, antara lain:Pemrograman (coding),Analisis dan pemecahan masalah(problem solving),Perancangan dan pengembangan sistem,Keamanan informasi,Kerja tim dan komunikasi teknis,Pemanfaatan teknologi untuk solusi nyata.👌",
+        "Melalui praktikum di Lab PSTI, mahasiswa akan mengasah: Praktik coding secara langsung,Konfigurasi jaringan dan server,Pengelolaan database,Troubleshooting sistem,Penggunaan tools dan software industri,Kerja tim dalam project praktikum,Penerapan teori ke kasus nyata😁"
       ]
     },
     {
       "tag": "about_mhsreka24",
       "patterns": [
-        "siapa aja yang menjadi mahasiswa beasiswa reka inovasi?",
-        "siapa aja yang jadi anak beasiswa reka inovasi?",
-        "siapa aja yang masuk reka?",
-        "siapa aja yang dapet beasiswa reka?",
-        "siapa aja mahasiswa tahun 2024 yang dapet beasiswa reka?",
-        "siapa aja yang dapet beasiswa reka inovasi angkatan 24?",
+        "Siapa aja yang menjadi mahasiswa beasiswa Reka Inovasi?",
+        "Siapa aja yang jadi anak Beasiswa Reka Inovasi?",
+        "Siapa aja yang masuk reka?",
+        "Siapa aja yang dapet beasiswa reka?",
+        "Siapa aja mahasiswa tahun 2024 yang dapet beasiswa reka?",
+        "Siapa aja yang dapet beasiswa reka inovasi angkatan 24?",
         "siapa aja anak beasiswa reka tahun 2024?",
         "siapa aja yang masuk reka inovasi angkatan 24?",
         "siapa aja mahasiswa tahun 2024 yang beasiswa reka inovasi?",
         "kenalin anak-anak reka inovasi 2024 dong!"
       ],
       "responses": [
-        "Kenalin nih!! 👋 Ini adalah anak-anak mahasiswa yang mendapat Beasiswa Reka Inovasi dan menjadi bagian dari Lab PSTI pada tahun angkatan 2024! Ada Muhammad Ilham Alparsy, Muhammad Fakhsi Albukhori, Ramadhan Triansyah, Alessandro Farrel Gerrard Wijaya, Gabriel Valentino Cuaca, Gery Wijaya, dan Tiara Angel. Mereka adalah penghuni Lab PSTI yang bersemangat mengembangkan skill di bidang teknologi dan riset. Ada yang ingin kamu tanyakan lebih lanjut? 😁"
+        "Kenalin nih!!  👋  Ini adalah anak-anak mahasiswa yang mendapat Beasiswa Reka Inovasi dan menjadi bagian dari Lab PSTI pada tahun angkatan 2024! Yang pertama ada Muhammad Ilham Alparsy (28421014), seorang mahasiswa yang bersemangat menjelajah serta mendalami teknologi dengan riset nya yang cekatan beserta segudang pengalaman! Peran nya sebagai ketua koordinator semua projek serta kegiatan membuat gear di dalam Lab PSTI seperti mendapat pelumas untuk bisa berjalan laju! Lalu yang kedua ada Muhammad Fakhsi Al-Bukhory (28421018), mahasiswa yang satu ini handal di bidang perakitan serta penanganan komponen elektronika. Yang ketiga ada Ramadhan Triansyah (28421013), mahasiswa ini juga ga kalah di bidang teknik merakit seperti Fakhsi, jangan di raguin deh skill nya!. Yang ke-empat ada Alessandro Farrel Gerrard Wijaya (28421014), seorang mahasiswa yang bersemangat mendalami dunia CyberSecurity serta gemar mengeksplor hal-hal baru! Yang ke-lima ada Gabriel Valentino Cuaca (28411001), seorang mahasiswa aktif sebagai IoT Engineer di Lab PSTI UBL dengan pengalaman yang ga boleh di remehin! Yang ke-enam ada Gery Wijaya (28411003), Mahasiswa sosialis yang tertarik pada pengembangan sistem berbasis Internet of Things, kalau digabung dengan Gabriel, mereka menjadi duo yang tak tertandingi! Nah yang terakhir ini spesial, kenalin Tiara Angel (2841007), biasa di panggil \"Cira\" ini bersemangat dalam merancang arsitektur website sehingga berjalan lancar tanpa kendala! Ini lah mereka, 7 Anak Beasiswa Reka Inovasi tersebut adalah penghuni Lab PSTI. Ada yang ingin kamu tanyakan lebih lanjut? 😁 Misalnya \"Apa saja Projek yang sudah dibuat?\", atau \"Siapa aja Mahasiswa Beasiswa Reka Inovasi angkatan 25?\""
       ]
     },
     {
       "tag": "about_mhsreka25",
       "patterns": [
-        "siapa aja mahasiswa tahun 2025 yang dapet beasiswa reka?",
-        "siapa aja yang dapet beasiswa reka inovasi angkatan 25?",
+        "Siapa aja yang menjadi mahasiswa beasiswa Reka Inovasi?",
+        "Siapa aja yang jadi anak Beasiswa Reka Inovasi?",
+        "Siapa aja yang masuk reka?",
+        "Siapa aja yang dapet beasiswa reka?",
+        "Siapa aja mahasiswa tahun 2025 yang dapet beasiswa reka?",
+        "Siapa aja yang dapet beasiswa reka inovasi angkatan 25?",
         "siapa aja anak beasiswa reka tahun 2025?",
         "siapa aja yang masuk reka inovasi angkatan 25?",
         "siapa aja mahasiswa tahun 2025 yang beasiswa reka inovasi?",
         "kenalin anak-anak reka inovasi 2025 dong!"
       ],
       "responses": [
-        "Kenalin nih!! Ini adalah mahasiswa yang mendapatkan Beasiswa Reka Inovasi angkatan 2025 dan menjadi bagian dari Lab PSTI 🚀\nContohnya: Muhammad Farel Fainaki, Damar Aryo Saputra, dan Achmad Luth Fallah. Mereka berfokus pada skill dan kontribusi masing-masing untuk mendukung kegiatan Lab PSTI. Ada yang ingin kamu tanyakan lebih lanjut? 😄"
+        "Kenalin nih!!\nIni adalah mahasiswa yang mendapatkan Beasiswa Reka Inovasi angkatan 2025 dan menjadi bagian dari Lab PSTI 🚀\nYang pertama, ada  Muhammad Farel Fainaki, mahasiswa yang berfokus pada pengembangan Iot, 3D Modeling , dengan karakter yang pekerja keras  dalam mengerjakan proyek-proyek di lab.  \nYang kedua, Damar Aryo Saputra, yang dikenal sebagai mahasiswa dengan ketertarikan pada 3D Modeling  serta berperan dalam pembuatan 3D modeling seolah SMK 8 untuk mendukung kegiatan Lab PSTI.\n\nYang ketiga, ada Muhammad Alvin Fahreza, mahasiswa yang memiliki minat di bidang Iot, serta berperan dalam  pembuatan Proyek SiApik sebagai Iot engineer \n\nYang keempat ,kita ada Muhammad Fathurahman Muiz ,mahasiswa yang memiliki minat yang sama seperti alvin 😁 fathur juga berperan dalam pembuatan alat Smart Springkler sebagai Iot Engineer  \n\nYang kelima, ada NAUFAL SAID ARRASIKH ,atau yang  biasa dipanggil Nopal  Adalah Mahasiswa yang hebat dia memiliki ketetarikan terhadap Penerapan Iot loh. \nTerakhir ada , Achmad Luth Fallah, mahasiswa yang memiliki minat di bidang 3D Modeling , dan Website development  dan berkontribusi dalam Pembuatan 3D Modeling SMK 8 dan Website Perpustakaan Digital, sehingga membantu jalannya berbagai aktivitas di Lab PSTI.\nItulah mereka, mahasiswa Beasiswa Reka Inovasi angkatan 2025 yang menjadi bagian dari keluarga Lab PSTI ✨  \nAda yang ingin kamu tanyakan lebih lanjut? 😄  \nMisalnya:\n- *Apa saja projek yang sudah dibuat?*  \n- *Skill apa saja yang dipelajari di Lab PSTI?*  \n- *Siapa aja Mahasiswa Beasiswa Reka Inovasi angkatan sebelumnya? (Angkatan 24)*"
       ]
     },
     {
       "tag": "info_beasiswa",
       "patterns": [
-        "gimana caranya dapetin beasiswa reka inovasi?",
-        "mau nanya dong, apa itu beasiswa reka inovasi?",
-        "beasiswa reka inovasi gimana dapetinnya?",
-        "aku mau jadi mahasiswa beasiswa reka inovasi!"
+        "Gimana caranya dapetin beasiswa Reka Inovasi?",
+        "Mau nanya dong",
+        "apa itu beasiswa Reka Inovasi?",
+        "Beasiswa Reka Inovasi gimana dapetinnya?",
+        "Aku mau jadi mahasiswa beasiswa reka inovasi!"
       ],
       "responses": [
-        "Beasiswa Reka Inovasi bersifat pengajuan. Mahasiswa baru dapat mengajukan setelah diterima di UBL melalui Jalur Madani dan registrasi ulang. Jika disetujui, mahasiswa mengikuti Pre College 3 minggu di Pusat Studi atau Lab terkait. Persyaratan meliputi scan E-KTP, kartu pelajar, kartu keluarga, ijazah SMA/SMK/MA, SKL, surat rekomendasi kepala sekolah, sertifikat kejuaraan, dan foto diri ukuran 4R full body."
+        "Beasiswa Reka Inovasi merupakan beasiswa yang bersifat pengajuan, di mana mahasiswa baru dapat mengajukan permohonan setelah dinyatakan diterima di Universitas Bandar Lampung melalui Jalur Madani dan telah menyelesaikan proses registrasi ulang. Apabila pengajuan beasiswa disetujui oleh Universitas Bandar Lampung, mahasiswa baru diwajibkan untuk mengikuti kegiatan Pre College selama 3 (tiga) minggu pada Pusat Studi atau Laboratorium yang telah ditunjuk, sesuai dengan program studi yang dipilih. Adapun berkas persyaratan Beasiswa Reka Inovasi yang harus dilengkapi meliputi scan E-KTP calon mahasiswa, scan kartu pelajar, scan E-KTP ibu kandung, scan kartu keluarga, scan ijazah SMA/SMK/MA, scan surat keterangan lulus (SKL), scan serta berkas asli surat rekomendasi dari kepala sekolah, scan sertifikat kejuaraan sesuai dengan data yang diisikan pada formulir digital, serta foto diri ukuran 4R full body.😊"
+      ]
+    },
+    {
+      "tag": "about_projek",
+      "patterns": [
+        "Projek apa aja yang udah dibuat?",
+        "Projek apa aja yang pernah dibuat mahasiswa PSTI?",
+        "Di PSTI ada projek apa aja?",
+        "Projek apa aja yang pernah di kerjain?",
+        "Anak Lab PSTI suka ngerjain projek apa?"
+      ],
+      "responses": [
+        "Projek yang telah dikerjakan di PSTI adalah PROMET, AQUA_SECURE dan CHATBOT",
+        "Projek mahasiswa reka inovasi di PSTI adalah AQUA_SECURE, PROMET, dan CHATBOT"
+      ]
+    },
+    {
+      "tag": "fasilitas_lab",
+      "patterns": [
+        "Fasilitas Lab ada apa aja?",
+        "Di Lab PSTI ada apa aja?",
+        "Di dalam Lab PSTI ada apa aja?",
+        "Fasilitas Lab PSTI apa aja sih?",
+        "fasilitas lab apa aja?",
+        "ada apa aja di lab psti?",
+        "lab psti isinya apa?"
+      ],
+      "responses": [
+        "Laboratorium PSTI dilengkapi dengan berbagai fasilitas penunjang kegiatan pembelajaran dan praktikum, antara lain 2 unit PC yang digunakan untuk aktivitas akademik, 2 unit TV sebagai media pendukung penyampaian materi, serta berbagai peralatan praktikum seperti alat solder dan perlengkapan elektronik lainnya yang menunjang kegiatan praktik dan pengembangan keterampilan mahasiswa.",
+        "Laboratorium PSTI menyediakan berbagai fasilitas untuk mendukung kegiatan belajar dan praktikum mahasiswa. Di dalamnya terdapat 2 unit komputer yang digunakan untuk aktivitas akademik, 2 unit TV sebagai sarana penunjang penyampaian materi, serta peralatan praktikum seperti alat solder dan perangkat elektronik lainnya yang menunjang kegiatan praktik dan pengembangan kemampuan mahasiswa."
+      ]
+    },
+    {
+      "tag": "aturan_lab",
+      "patterns": [
+        "kira-kira apa aja aturan lab?",
+        "apa aja aturan lab?",
+        "di dalam lab psti ada aturan apa?"
+      ],
+      "responses": [
+        "Mahasiswa penerima Beasiswa Reka Inovasi memiliki kewajiban untuk mengikuti kegiatan pembelajaran dan pengembangan di Pusat Studi atau Laboratorium yang telah ditunjuk dengan beban minimal 20 (dua puluh) jam per minggu. Kegiatan tersebut dilaksanakan di luar jam perkuliahan dan menyesuaikan dengan jadwal yang ditetapkan oleh Pusat Studi atau Laboratorium terkait. Untuk memantau perkembangan akademik dan nonakademik, mahasiswa penerima beasiswa wajib menyampaikan laporan perkembangan pada setiap semester. Selain itu, mahasiswa harus memiliki Indeks Prestasi Kumulatif (IPK) minimal 3,00 sebagai syarat untuk memperoleh rekomendasi perpanjangan beasiswa dari Pusat Studi atau Laboratorium yang ditunjuk. Perpanjangan Beasiswa Reka Inovasi diberikan berdasarkan rekomendasi tersebut dengan mempertimbangkan keaktifan mahasiswa serta pencapaian soft skill, seperti perilaku, disiplin, dan komunikasi, maupun hard skill, berupa pengetahuan dan keahlian. Keputusan perpanjangan beasiswa ditetapkan melalui Surat Keputusan Rektor yang diterbitkan oleh Biro Kemahasiswaan dan Hubungan Alumni, dengan jangka waktu perpanjangan maksimal hingga 8 (delapan) semester."
+      ]
+    },
+    {
+      "tag": "kontak_lab",
+      "patterns": [
+        "kontak lab psti",
+        "hubungi lab psti",
+        "email lab?",
+        "wa lab psti",
+        "nomor admin lab?",
+        "instagram lab psti?",
+        "sosmed lab psti?",
+        "tanya lab ke siapa?",
+        "contact person lab?",
+        "admin lab siapa?",
+        "ada telegram ga?",
+        "dm lab psti dimana?"
+      ],
+      "responses": [
+        "Kamu bisa hubungi Lab PSTI via email, WhatsApp, atau Instagram yaa. Kontak resmi tersedia di IG @rekainovasi",
+        "Untuk respon cepat, biasanya lewat WhatsApp atau DM Instagram😁😁"
+      ]
+    },
+    {
+      "tag": "jam_operasional",
+      "patterns": [
+        "lab buka jam berapa?",
+        "jam operasional psti",
+        "hari ini lab buka ga?",
+        "lab psti buka ga sekarang?",
+        "jam kerja lab",
+        "jadwal buka lab",
+        "lab tutup jam berapa?",
+        "bisa ke lab jam berapa?",
+        "lab buka tiap hari ga?",
+        "weekend buka ga?",
+        "hari sabtu buka ga?",
+        "minggu buka ga?"
+      ],
+      "responses": [
+        "Senin–Jumat buka jam 08.00–17.00 WIB.😊",
+        "Hari Sabtu, Minggu dan libur nasional lab tutup ya, Kalau mau datang, pastiin masih di jam operasional 👍"
       ]
     },
     {
@@ -212,7 +270,8 @@
         "gedung lab psti"
       ],
       "responses": [
-        "Lab PSTI ada di Gedung M lantai 1 Universitas Bandar Lampung. Kalau bingung, bisa tanya satpam atau kontak admin lab."
+        "Lab PSTI ada di Gedung M lantai 1 Universitas Bandar Lampung yaa",
+        "Lokasinya di kampus UBL, Gedung M Lt.1 yaah. Kalau bingung, bisa tanya satpam atau kontak admin lab😊😊😊"
       ]
     },
     {
@@ -234,272 +293,8 @@
         "lab terbuka ga?"
       ],
       "responses": [
-        "Lab PSTI bisa diakses mahasiswa UBL dengan izin atau surat resmi. Mahasiswa Beasiswa Reka Inovasi memiliki akses khusus, tapi untuk kegiatan tertentu tetap perlu izin dosen/admin. Pihak luar UBL bisa masuk jika ada kerja sama atau izin resmi."
-      ]
-    },
-    {
-      "tag": "kontak_admin",
-      "patterns": [
-        "kontak admin psti",
-        "hubungi lab psti",
-        "nomor admin psti",
-        "siapa yang bisa dihubungi"
-      ],
-      "responses": [
-        "Untuk informasi lebih lanjut, kamu bisa menghubungi pengelola Lab PSTI secara langsung di kampus.",
-        "Silakan hubungi admin atau dosen pengelola Lab PSTI di kampus."
-      ]
-    },
-    {
-      "tag": "tentang_promet",
-      "patterns": [
-        "promet itu apa",
-        "apa itu promet",
-        "jelaskan promet",
-        "promet adalah",
-        "pengertian promet",
-        "fungsi promet",
-        "kegunaan promet",
-        "promet sistem apa",
-        "promet?",
-        "promet"
-      ],
-      "responses": [
-        "PROMET (Protect and Monitoring Emergency Threat) merupakan sistem berbasis Internet of Things (IoT) yang dirancang untuk mendeteksi dan memantau kondisi darurat, khususnya potensi kebakaran, secara real-time. Sistem ini memanfaatkan sensor suhu dan asap untuk memberikan peringatan dini serta notifikasi kepada pengguna ketika terdeteksi adanya indikasi bahaya."
-      ]
-    },
-    {
-      "tag": "cara_kerja_promet",
-      "patterns": [
-        "cara kerja promet",
-        "promet bekerja bagaimana",
-        "sistem kerja promet",
-        "bagaimana promet mendeteksi kebakaran"
-      ],
-      "responses": [
-        "PROMET bekerja dengan memantau kondisi lingkungan secara terus-menerus menggunakan sensor suhu dan asap. Data dari sensor dikirim melalui jaringan internet ke sistem monitoring, lalu ketika terdeteksi indikasi kebakaran, sistem akan memberikan peringatan dan notifikasi secara real-time kepada pengguna atau pihak terkait."
-      ]
-    },
-    {
-      "tag": "teknologi_promet",
-      "patterns": [
-        "teknologi yang digunakan promet",
-        "promet menggunakan teknologi apa",
-        "promet berbasis apa",
-        "apakah promet menggunakan iot"
-      ],
-      "responses": [
-        "PROMET menggunakan teknologi Internet of Things (IoT) sebagai teknologi utama. Sistem ini memanfaatkan sensor suhu dan asap yang terhubung ke jaringan internet untuk melakukan pemantauan kondisi darurat secara real-time melalui platform digital."
-      ]
-    },
-    {
-      "tag": "keunggulan_promet",
-      "patterns": [
-        "keunggulan promet",
-        "kelebihan promet",
-        "manfaat promet",
-        "apa kelebihan sistem promet"
-      ],
-      "responses": [
-        "Keunggulan PROMET terletak pada kemampuannya melakukan deteksi dini kebakaran secara real-time, pemantauan jarak jauh melalui platform digital, serta meningkatkan kecepatan respons dan kesiapsiagaan dalam menghadapi ancaman kebakaran di berbagai lingkungan."
-      ]
-    },
-    {
-      "tag": "tentang_scango",
-      "patterns": [
-        "scan go itu apa",
-        "apa itu scan go",
-        "jelaskan scan go",
-        "fungsi scan go",
-        "aplikasi scan go",
-        "scan go absensi apa"
-      ],
-      "responses": [
-        "Scan-Go merupakan aplikasi absensi sekolah berbasis Internet of Things (IoT) yang dirancang untuk mencatat kehadiran siswa secara real-time. Sistem ini menggunakan perangkat absensi yang terhubung ke internet sehingga data kehadiran tercatat otomatis dan dapat dipantau melalui aplikasi atau website."
-      ]
-    },
-    {
-      "tag": "fungsi_scango",
-      "patterns": [
-        "fungsi scan go",
-        "kegunaan scan go",
-        "scan go buat apa"
-      ],
-      "responses": [
-        "Scan-Go berfungsi untuk mencatat kehadiran siswa secara otomatis dan real-time, sehingga memudahkan sekolah dalam monitoring absensi dan mengurangi kesalahan pencatatan manual."
-      ]
-    },
-    {
-      "tag": "teknologi_scango",
-      "patterns": [
-        "teknologi scan go",
-        "scan go pakai apa",
-        "scan go berbasis apa"
-      ],
-      "responses": [
-        "Scan-Go menggunakan teknologi Internet of Things (IoT) yang menghubungkan perangkat absensi dengan sistem server dan aplikasi berbasis web."
-      ]
-    },
-    {
-      "tag": "tentang_apik",
-      "patterns": [
-        "apik itu apa",
-        "apa itu apik",
-        "jelaskan apik",
-        "fungsi apik",
-        "alat apik kebakaran",
-        "apik sistem apa"
-      ],
-      "responses": [
-        "APIK (Alat Pengingat Info Kebakaran) merupakan sistem deteksi dini kebakaran berbasis Internet of Things (IoT) yang memantau asap dan suhu lingkungan. Ketika terdeteksi indikasi kebakaran, sistem akan mengaktifkan alarm serta mengirimkan notifikasi real-time kepada pengguna."
-      ]
-    },
-    {
-      "tag": "cara_kerja_apik",
-      "patterns": [
-        "cara kerja apik",
-        "apik bekerja bagaimana",
-        "bagaimana sistem apik"
-      ],
-      "responses": [
-        "APIK bekerja dengan memantau suhu dan asap menggunakan sensor. Ketika terdeteksi potensi kebakaran, sistem akan mengaktifkan alarm dan mengirimkan notifikasi secara real-time kepada pengguna."
-      ]
-    },
-    {
-      "tag": "keunggulan_apik",
-      "patterns": [
-        "keunggulan apik",
-        "kelebihan apik",
-        "manfaat apik"
-      ],
-      "responses": [
-        "APIK memiliki keunggulan berupa deteksi dini kebakaran, notifikasi real-time, serta sistem yang sederhana dan responsif untuk meningkatkan kewaspadaan."
-      ]
-    },
-    {
-      "tag": "tentang_aquasecure",
-      "patterns": [
-        "aqua secure itu apa",
-        "apa itu aqua secure",
-        "jelaskan aqua secure",
-        "fungsi aqua secure",
-        "sistem aqua secure"
-      ],
-      "responses": [
-        "Aqua Secure merupakan sistem kontrol keran air berbasis Internet of Things (IoT) yang memungkinkan pengaturan dan pemantauan penggunaan air secara real-time. Sistem ini dirancang untuk menghemat air dan mencegah pemborosan melalui kontrol otomatis."
-      ]
-    },
-    {
-      "tag": "fungsi_aquasecure",
-      "patterns": [
-        "fungsi aqua secure",
-        "kegunaan aqua secure",
-        "aqua secure untuk apa"
-      ],
-      "responses": [
-        "Aqua Secure berfungsi untuk mengontrol dan memantau penggunaan air secara otomatis sehingga dapat menghemat air dan mencegah pemborosan."
-      ]
-    },
-    {
-      "tag": "teknologi_aquasecure",
-      "patterns": [
-        "teknologi aqua secure",
-        "aqua secure berbasis apa"
-      ],
-      "responses": [
-        "Aqua Secure menggunakan teknologi Internet of Things (IoT) dengan sistem kontrol keran air yang terhubung ke jaringan internet."
-      ]
-    },
-    {
-      "tag": "tentang_embunin_smart",
-      "patterns": [
-        "embunin smart itu apa",
-        "apa itu embunin smart",
-        "jelaskan embunin smart",
-        "fungsi embunin smart",
-        "sistem embunin smart"
-      ],
-      "responses": [
-        "Embunin Smart merupakan sistem greenhouse berbasis Internet of Things (IoT) yang memungkinkan pengaturan jadwal penyiraman tanaman secara otomatis. Sistem ini membantu menjaga kelembapan tanaman, meningkatkan efisiensi perawatan, dan mempermudah pengelolaan greenhouse."
-      ]
-    },
-    {
-      "tag": "cara_kerja_embunin",
-      "patterns": [
-        "cara kerja embunin smart",
-        "embunin smart bekerja bagaimana"
-      ],
-      "responses": [
-        "Embunin Smart bekerja dengan mengatur penyiraman tanaman secara otomatis berdasarkan jadwal yang telah ditentukan dan dapat dikontrol melalui sistem berbasis internet."
-      ]
-    },
-    {
-      "tag": "manfaat_embunin",
-      "patterns": [
-        "manfaat embunin smart",
-        "keunggulan embunin smart"
-      ],
-      "responses": [
-        "Embunin Smart membantu menjaga kelembapan tanaman, menghemat waktu perawatan, serta meningkatkan efisiensi pengelolaan greenhouse."
-      ]
-    },
-    {
-      "tag": "tentang_smart_parking",
-      "patterns": [
-        "smart parking monitoring itu apa",
-        "apa itu smart parking monitoring",
-        "jelaskan smart parking",
-        "fungsi smart parking monitoring",
-        "sistem parkir pintar psti"
-      ],
-      "responses": [
-        "Smart Parking Monitoring merupakan sistem monitoring parkir berbasis Internet of Things (IoT) yang digunakan untuk memantau ketersediaan slot parkir secara real-time. Sistem ini membantu meningkatkan efisiensi pengelolaan parkir dan mengurangi waktu pencarian tempat parkir."
-      ]
-    },
-    {
-      "tag": "cara_kerja_smart_parking",
-      "patterns": [
-        "cara kerja smart parking monitoring",
-        "smart parking bekerja bagaimana"
-      ],
-      "responses": [
-        "Smart Parking Monitoring bekerja dengan menggunakan sensor untuk mendeteksi keberadaan kendaraan pada setiap slot parkir dan menampilkan statusnya secara real-time melalui sistem digital."
-      ]
-    },
-    {
-      "tag": "tentang_digital_twin_bodhisattva",
-      "patterns": [
-        "smp sma bodhisattva roblox itu apa",
-        "apa itu digital twin bodhisattva",
-        "game smp sma bodhisattva",
-        "visualisasi sekolah bodhisattva"
-      ],
-      "responses": [
-        "SMP-SMA Bodhisattva merupakan game interaktif berbasis platform Roblox yang digunakan sebagai media promosi sekolah. Game ini memungkinkan pengguna menjelajahi lingkungan sekolah secara virtual dan mengenal fasilitas dengan cara yang interaktif."
-      ]
-    },
-    {
-      "tag": "keunggulan_digital_twin_lab_psti",
-      "patterns": [
-        "keunggulan digital twin lab psti",
-        "kelebihan digital twin lab psti",
-        "manfaat digital twin lab psti"
-      ],
-      "responses": [
-        "Keunggulan Digital Twin Lab PSTI terletak pada visualisasi 3D yang interaktif, kemudahan akses secara online, serta kemampuannya menampilkan fasilitas dan project PSTI secara menarik."
-      ]
-    },
-    {
-      "tag": "about_skill",
-      "patterns": [
-        "skill apa saja di lab",
-        "skill apa aja yang dikembangkan di lab",
-        "mahasiswa belajar skill apa",
-        "lab psti mendukung skill apa saja",
-        "apa kemampuan yang dikembangkan di lab"
-      ],
-      "responses": [
-        "Lab PSTI mendukung pengembangan skill IoT, CyberSecurity, Web, dan Embedded System."
+        "Lab PSTI bisa diakses mahasiswa (maupun) UBL dengan izin atau surat resmi terkecuali Mahasiswa dengan Beasiswa Reka Inovasi namun untuk kegiatan tertentu, perlu izin dosen atau admin lab",
+        "Pihak luar UBL bisa masuk kalau ada kerja sama atau izin resmi yaa"
       ]
     },
     {
@@ -510,10 +305,47 @@
         "anime bagus apa?",
         "drakor terbaru apa?",
         "lagu yang enak didengar?",
-        "spotify premium gimana?"
+        "spotify premium gimana?",
+        ""
       ],
       "responses": [
-        "Maaf, saya belum memahami pertanyaan Anda. Chatbot ini difokuskan untuk menjawab pertanyaan tertentu. Silakan ajukan pertanyaan lain atau gunakan kata kunci yang lebih jelas."
+        "Maaf, saya belum memahami pertanyaan Anda.",
+        "Chatbot ini difokuskan untuk menjawab pertanyaan tertentu.",
+        "Silakan ajukan pertanyaan lain atau gunakan kata kunci yang lebih jelas.",
+        ""
+      ]
+    },
+    {
+      "tag": "aturan_lab",
+      "patterns": [
+        "bisa ngerjain tugas ga?",
+        "lab bisa buat nugas?",
+        "boleh belajar di lab?",
+        "boleh ngoding di lab?",
+        "bisa pake pc buat tugas?",
+        "tempat nugas di lab?",
+        "lab enak buat belajar?",
+        "bisa riset di lab?",
+        "boleh lama di lab?",
+        "bisa kerja kelompok?",
+        "lab buat diskusi?",
+        "bisa buka laptop sendiri?",
+        "lab buat praktikum mandiri?",
+        "lab buat projek?",
+        "lab buat penelitian?",
+        "lab buat belajar coding?"
+      ],
+      "responses": [
+        "Laboratorium dapat digunakan untuk mengerjakan tugas, belajar, dan kegiatan akademik lainnya sesuai dengan peraturan yang berlaku.",
+        ",\n    Mahasiswa diperbolehkan belajar dan mengerjakan tugas di laboratorium selama jam operasional.",
+        "Laboratorium bisa digunakan untuk coding, proyek, dan praktikum mandiri dengan tetap menjaga ketertiban.",
+        "Mahasiswa dapat memanfaatkan fasilitas laboratorium untuk riset dan penelitian akademik.",
+        "Penggunaan komputer laboratorium diperbolehkan untuk kegiatan perkuliahan dan tugas akademik.",
+        "Mahasiswa boleh menggunakan laptop pribadi saat berada di laboratorium.",
+        "Laboratorium dapat digunakan untuk kerja kelompok dan diskusi selama tidak mengganggu pengguna lain.",
+        "Mahasiswa diperkenankan berada di laboratorium selama jam yang telah ditentukan.",
+        "Laboratorium mendukung kegiatan pembelajaran mandiri dan pengembangan proyek mahasiswa.,",
+        "Penggunaan laboratorium harus mengikuti tata tertib dan kebijakan yang berlaku di kampus."
       ]
     }
   ]
