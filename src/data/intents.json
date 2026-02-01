@@ -33,9 +33,13 @@
         "sampai jumpa"
       ],
       "responses": [
-        "Sama-sama! Semoga membantu ya 😊",
+        "Sama-sama! Saya senang jika anda puas dengan informasi yang saya berikan, apakah ada pertanyaan lagi seputar PSTI? 😊",
         "Terima kasih sudah bertanya! Kalau butuh info lagi tinggal tanya ya.",
-        "Sampai jumpa lagi!"
+        "Sampai jumpa lagi!",
+        "Iyaa sama-sama! Apakah ada yang ingin kamu tanyakan lagi seputar PSTI? 😀|Terima kasih kembali! Tanyakan saja apa yang jadi kebingungan mu yaa! 😁",
+        "Sama-sama! Saya puas jika anda juga puas dengan informasi yang saya berikan! Silahkan ada pertanyaan lagi? 😊",
+        "Sama-samaaa, jangan sungkan untuk bertanya lagi jika masih bingung seputar PSTI yaa 😎"
+
       ]
     },
     {
@@ -51,7 +55,8 @@
       ],
       "responses": [
         "Lab PSTI adalah laboratorium riset dan inovasi di bidang Teknologi Informasi di UBL yang fokus pada IoT, AI, Web System, dan Digital Twin.",
-        "PSTI merupakan tempat mahasiswa melakukan riset, praktikum, dan pengembangan project teknologi."
+        "Lab PSTI adalah laboratorium pusat riset dan praktikum IT di UBL, mulai dari programming sampai IoT dan AI. Bersama dengan 3 Kakak-kakak keren 'Ari Mardiansyah', 'Syarif Hidayatulloh', dan 'Aldi Prasetyo', kakak-kakak ini bertanggung jawab atas segala kegiatan yang berlangsung di dalam Lab! Adakah yang ingin kamu tanyakan lebih lanjut? 😊 Misalnya 'Kenapa Anak Reka Inovasi bergabung di Lab PSTI?' atau 'Gimana caranya bisa dapet beasiswa Reka Inovasi?'",
+        "Lab PSTI (atau lengkapnya Pusat Studi Teknologii Informasi) adalah lab dimana mahasiswa dengan beasiswa reka inovasi dapat belajar dan mengembangkan skill mereka seputar teknologi informasi! Bersama dengan 3 Kakak-kakak keren 'Ari Mardiansyah', 'Syarif Hidayatulloh', dan 'Aldi Prasetyo', kakak-kakak ini bertanggung jawab atas segala kegiatan yang berlangsung di dalam Lab! Adakah yang ingin kamu tanyakan lebih lanjut? 😊 Misalnya 'Kenapa Anak Reka Inovasi bergabung di Lab PSTI?' atau 'Gimana caranya bisa dapet beasiswa Reka Inovasi?'"
       ]
     },
     {
@@ -186,8 +191,7 @@
         "gimana caranya dapetin beasiswa reka inovasi?",
         "mau nanya dong, apa itu beasiswa reka inovasi?",
         "beasiswa reka inovasi gimana dapetinnya?",
-        "aku mau jadi mahasiswa beasiswa reka inovasi!",
-        "apa itu beasiswa reka inovasi?"
+        "aku mau jadi mahasiswa beasiswa reka inovasi!"
       ],
       "responses": [
         "Beasiswa Reka Inovasi bersifat pengajuan. Mahasiswa baru dapat mengajukan setelah diterima di UBL melalui Jalur Madani dan registrasi ulang. Jika disetujui, mahasiswa mengikuti Pre College 3 minggu di Pusat Studi atau Lab terkait. Persyaratan meliputi scan E-KTP, kartu pelajar, kartu keluarga, ijazah SMA/SMK/MA, SKL, surat rekomendasi kepala sekolah, sertifikat kejuaraan, dan foto diri ukuran 4R full body."
